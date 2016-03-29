@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MarioLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>XYUIDesign.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E2766FB21A80B3490049E29A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2766FBC1A80B3490049E29A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E27670791A80B8C60049E29A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E27670831A80B8C60049E29A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2D9B9671A5E722E00FBBEFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2D9B9801A5E722E00FBBEFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

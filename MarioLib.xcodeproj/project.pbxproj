@@ -1,0 +1,1725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E27590581A8304D300E4C136 /* XYMessageAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = E27590561A8304D300E4C136 /* XYMessageAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27590591A8304D300E4C136 /* XYMessageAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = E27590571A8304D300E4C136 /* XYMessageAgent.m */; };
+		E275905C1A83057200E4C136 /* XYMessageEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = E275905A1A83057200E4C136 /* XYMessageEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E275905D1A83057200E4C136 /* XYMessageEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E275905B1A83057200E4C136 /* XYMessageEngine.m */; };
+		E27590601A83101500E4C136 /* MessageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E275905F1A83101500E4C136 /* MessageItem.m */; };
+		E27590631A83155600E4C136 /* XYUISegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E27590611A83155600E4C136 /* XYUISegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27590641A83155600E4C136 /* XYUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E27590621A83155600E4C136 /* XYUISegmentedControl.m */; };
+		E27590671A83184200E4C136 /* XYPagedView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27590651A83184200E4C136 /* XYPagedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27590681A83184200E4C136 /* XYPagedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27590661A83184200E4C136 /* XYPagedView.m */; };
+		E275906B1A831A3B00E4C136 /* XYImageListView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27590691A831A3B00E4C136 /* XYImageListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E275906C1A831A3B00E4C136 /* XYImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E275906A1A831A3B00E4C136 /* XYImageListView.m */; };
+		E27590701A8355DA00E4C136 /* AppBaseUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E275906F1A8355DA00E4C136 /* AppBaseUITableViewController.m */; };
+		E275907A1A8499E100E4C136 /* MessageDict.m in Sources */ = {isa = PBXBuildFile; fileRef = E27590791A8499E100E4C136 /* MessageDict.m */; };
+		E2766E321A7239710049E29A /* AllSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2766E311A7239710049E29A /* AllSampleViewController.m */; };
+		E2766E351A723CF50049E29A /* StandardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2766E341A723CF50049E29A /* StandardTableViewController.m */; };
+		E2766E391A761CA50049E29A /* libUMessage_Sdk_1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2766E371A761CA50049E29A /* libUMessage_Sdk_1.1.0.a */; };
+		E27670851A80B8C70049E29A /* libXYUIDesign.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E276707A1A80B8C60049E29A /* libXYUIDesign.a */; };
+		E276715E1A80B96D0049E29A /* XYAdvField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670931A80B96C0049E29A /* XYAdvField.m */; };
+		E276715F1A80B96D0049E29A /* XYAdvSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670971A80B96C0049E29A /* XYAdvSearchField.m */; };
+		E27671601A80B96D0049E29A /* XYAdvSearchFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276709A1A80B96D0049E29A /* XYAdvSearchFieldViewController.m */; };
+		E27671611A80B96D0049E29A /* XYDatePickerField.m in Sources */ = {isa = PBXBuildFile; fileRef = E276709C1A80B96D0049E29A /* XYDatePickerField.m */; };
+		E27671621A80B96D0049E29A /* XYDynaSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = E276709E1A80B96D0049E29A /* XYDynaSearchField.m */; };
+		E27671631A80B96D0049E29A /* XYDynaSearchFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670A11A80B96D0049E29A /* XYDynaSearchFieldViewController.m */; };
+		E27671641A80B96D0049E29A /* XYDynaSearchSelectionField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670A31A80B96D0049E29A /* XYDynaSearchSelectionField.m */; };
+		E27671651A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670A51A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.m */; };
+		E27671661A80B96D0049E29A /* XYField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670A71A80B96D0049E29A /* XYField.m */; };
+		E27671671A80B96D0049E29A /* XYInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670A91A80B96D0049E29A /* XYInputTextField.m */; };
+		E27671681A80B96D0049E29A /* XYInputTextViewField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670AB1A80B96D0049E29A /* XYInputTextViewField.m */; };
+		E27671691A80B96D0049E29A /* XYPickerField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670AD1A80B96D0049E29A /* XYPickerField.m */; };
+		E276716A1A80B96D0049E29A /* XYSelectionField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670AF1A80B96D0049E29A /* XYSelectionField.m */; };
+		E276716B1A80B96D0049E29A /* XYSelectionItemField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670B21A80B96D0049E29A /* XYSelectionItemField.m */; };
+		E276716C1A80B96D0049E29A /* XYSelectOptionField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670B41A80B96D0049E29A /* XYSelectOptionField.m */; };
+		E276716D1A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670B61A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.m */; };
+		E276716E1A80B96D0049E29A /* XYConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670B91A80B96D0049E29A /* XYConnection.m */; };
+		E276716F1A80B96D0049E29A /* XYConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670BB1A80B96D0049E29A /* XYConnector.m */; };
+		E27671701A80B96D0049E29A /* XYConnectorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670BD1A80B96D0049E29A /* XYConnectorManager.m */; };
+		E27671711A80B96D0049E29A /* XYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670BF1A80B96D0049E29A /* XYRequest.m */; };
+		E27671721A80B96D0049E29A /* XYResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670C11A80B96D0049E29A /* XYResponse.m */; };
+		E27671731A80B96D0049E29A /* XYCoreDataConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670C41A80B96D0049E29A /* XYCoreDataConnector.m */; };
+		E27671741A80B96D0049E29A /* XYCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670C61A80B96D0049E29A /* XYCoreDataManager.m */; };
+		E27671751A80B96D0049E29A /* XYStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670C81A80B96D0049E29A /* XYStorageManager.m */; };
+		E27671761A80B96D0049E29A /* XYBubbleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670CC1A80B96D0049E29A /* XYBubbleTableCell.m */; };
+		E27671771A80B96D0049E29A /* XYButtonTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670CE1A80B96D0049E29A /* XYButtonTableCell.m */; };
+		E27671781A80B96D0049E29A /* XYDummyTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670D01A80B96D0049E29A /* XYDummyTableCell.m */; };
+		E27671791A80B96D0049E29A /* XYDynamicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670D21A80B96D0049E29A /* XYDynamicTableCell.m */; };
+		E276717A1A80B96D0049E29A /* XYExpandableTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670D41A80B96D0049E29A /* XYExpandableTableCell.m */; };
+		E276717B1A80B96D0049E29A /* XYRollableTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670D61A80B96D0049E29A /* XYRollableTableCell.m */; };
+		E276717C1A80B96D0049E29A /* XYSelectionItemTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670D81A80B96D0049E29A /* XYSelectionItemTableCell.m */; };
+		E276717D1A80B96D0049E29A /* XYSelectionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670DA1A80B96D0049E29A /* XYSelectionTableCell.m */; };
+		E276717E1A80B96D0049E29A /* XYTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670DC1A80B96D0049E29A /* XYTableCell.m */; };
+		E276717F1A80B96D0049E29A /* XYValueHelpTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670DE1A80B96D0049E29A /* XYValueHelpTableCell.m */; };
+		E27671801A80B96D0049E29A /* XYBaseUITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670E01A80B96D0049E29A /* XYBaseUITableViewDelegate.m */; };
+		E27671811A80B96D0049E29A /* XYTableCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670E41A80B96D0049E29A /* XYTableCellFactory.m */; };
+		E27671821A80B96D0049E29A /* XYTableContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670E61A80B96D0049E29A /* XYTableContainer.m */; };
+		E27671831A80B96D0049E29A /* XYTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670E81A80B96D0049E29A /* XYTableSection.m */; };
+		E27671841A80B96D0049E29A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670EC1A80B96D0049E29A /* GTMBase64.m */; };
+		E27671851A80B96D0049E29A /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670F01A80B96D0049E29A /* NSObject+SBJson.m */; };
+		E27671861A80B96D0049E29A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670F31A80B96D0049E29A /* SBJsonParser.m */; };
+		E27671871A80B96D0049E29A /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670F51A80B96D0049E29A /* SBJsonStreamParser.m */; };
+		E27671881A80B96D0049E29A /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670F71A80B96D0049E29A /* SBJsonStreamParserAccumulator.m */; };
+		E27671891A80B96D0049E29A /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670F91A80B96D0049E29A /* SBJsonStreamParserAdapter.m */; };
+		E276718A1A80B96D0049E29A /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670FB1A80B96D0049E29A /* SBJsonStreamParserState.m */; };
+		E276718B1A80B96D0049E29A /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670FD1A80B96D0049E29A /* SBJsonStreamWriter.m */; };
+		E276718C1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E27670FF1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.m */; };
+		E276718D1A80B96D0049E29A /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671011A80B96D0049E29A /* SBJsonStreamWriterState.m */; };
+		E276718E1A80B96D0049E29A /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671031A80B96D0049E29A /* SBJsonTokeniser.m */; };
+		E276718F1A80B96D0049E29A /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671051A80B96D0049E29A /* SBJsonUTF8Stream.m */; };
+		E27671901A80B96D0049E29A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671071A80B96D0049E29A /* SBJsonWriter.m */; };
+		E27671911A80B96D0049E29A /* XYBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E276710A1A80B96D0049E29A /* XYBaseAppDelegate.m */; };
+		E27671921A80B96D0049E29A /* XYBaseErrorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E276710C1A80B96D0049E29A /* XYBaseErrorCenter.m */; };
+		E27671931A80B96D0049E29A /* XYErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671101A80B96D0049E29A /* XYErrorInfo.m */; };
+		E27671941A80B96D0049E29A /* XYFieldSelectOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671121A80B96D0049E29A /* XYFieldSelectOption.m */; };
+		E27671951A80B96D0049E29A /* XYKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671141A80B96D0049E29A /* XYKeyboardListener.m */; };
+		E27671961A80B96D0049E29A /* XYLabelValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671161A80B96D0049E29A /* XYLabelValue.m */; };
+		E27671971A80B96D0049E29A /* XYSelectOption.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671181A80B96D0049E29A /* XYSelectOption.m */; };
+		E27671981A80B96D0049E29A /* XYSelectorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E276711A1A80B96D0049E29A /* XYSelectorObject.m */; };
+		E27671991A80B96D0049E29A /* XYSkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E276711C1A80B96D0049E29A /* XYSkinManager.m */; };
+		E276719A1A80B96D0049E29A /* XYUISelectionTextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E276711F1A80B96D0049E29A /* XYUISelectionTextViewDelegate.m */; };
+		E276719B1A80B96D0049E29A /* XYUIStatusUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671211A80B96D0049E29A /* XYUIStatusUpdater.m */; };
+		E276719C1A80B96D0049E29A /* XYUITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671231A80B96D0049E29A /* XYUITextFieldDelegate.m */; };
+		E276719D1A80B96D0049E29A /* XYUITextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671251A80B96D0049E29A /* XYUITextViewDelegate.m */; };
+		E276719E1A80B96D0049E29A /* XYUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671271A80B96D0049E29A /* XYUtility.m */; };
+		E276719F1A80B96D0049E29A /* XYBasePopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276712A1A80B96D0049E29A /* XYBasePopOverViewController.m */; };
+		E27671A01A80B96D0049E29A /* XYBaseSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276712C1A80B96D0049E29A /* XYBaseSplitViewController.m */; };
+		E27671A11A80B96D0049E29A /* XYBaseUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276712E1A80B96D0049E29A /* XYBaseUITabBarController.m */; };
+		E27671A21A80B96D0049E29A /* XYBaseUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671301A80B96D0049E29A /* XYBaseUITableViewController.m */; };
+		E27671A31A80B96D0049E29A /* XYBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671321A80B96D0049E29A /* XYBaseUIViewController.m */; };
+		E27671A41A80B96D0049E29A /* XYErrorReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671341A80B96D0049E29A /* XYErrorReportViewController.m */; };
+		E27671A51A80B96D0049E29A /* XYProcessResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671361A80B96D0049E29A /* XYProcessResult.m */; };
+		E27671A61A80B96D0049E29A /* XYSelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671381A80B96D0049E29A /* XYSelectionListViewController.m */; };
+		E27671A71A80B96D0049E29A /* XYSelectOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276713A1A80B96D0049E29A /* XYSelectOptionViewController.m */; };
+		E27671A81A80B96D0049E29A /* XYVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276713C1A80B96D0049E29A /* XYVersionViewController.m */; };
+		E27671A91A80B96D0049E29A /* XYWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E276713E1A80B96D0049E29A /* XYWelcomeViewController.m */; };
+		E27671AA1A80B96D0049E29A /* XYActivityIndicatorIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671411A80B96D0049E29A /* XYActivityIndicatorIconView.m */; };
+		E27671AB1A80B96D0049E29A /* XYActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671431A80B96D0049E29A /* XYActivityIndicatorView.m */; };
+		E27671AC1A80B96D0049E29A /* XYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671451A80B96D0049E29A /* XYAnimationView.m */; };
+		E27671AD1A80B96D0049E29A /* XYBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671481A80B96D0049E29A /* XYBaseView.m */; };
+		E27671AE1A80B96D0049E29A /* XYBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E276714A1A80B96D0049E29A /* XYBubbleView.m */; };
+		E27671AF1A80B96D0049E29A /* XYFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = E276714C1A80B96D0049E29A /* XYFieldView.m */; };
+		E27671B01A80B96D0049E29A /* XYInputTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = E276714E1A80B96D0049E29A /* XYInputTextFieldView.m */; };
+		E27671B11A80B96D0049E29A /* XYInputTextViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671501A80B96D0049E29A /* XYInputTextViewView.m */; };
+		E27671B21A80B96D0049E29A /* XYNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671521A80B96D0049E29A /* XYNotificationView.m */; };
+		E27671B31A80B96D0049E29A /* XYProcessbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671541A80B96D0049E29A /* XYProcessbarView.m */; };
+		E27671B41A80B96D0049E29A /* XYProgressIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671561A80B96D0049E29A /* XYProgressIndicatorView.m */; };
+		E27671B51A80B96D0049E29A /* XYSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27671581A80B96D0049E29A /* XYSideView.m */; };
+		E27671B61A80B96D0049E29A /* XYUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E276715A1A80B96D0049E29A /* XYUIAlertView.m */; };
+		E27671B71A80B96D0049E29A /* XYUIAlertView2.m in Sources */ = {isa = PBXBuildFile; fileRef = E276715C1A80B96D0049E29A /* XYUIAlertView2.m */; };
+		E27671C31A80C2470049E29A /* UIDesighHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671BA1A80BA520049E29A /* UIDesighHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C41A80C2470049E29A /* XYUIDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E9D4151A5F56D70086201D /* XYUIDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C51A80C2470049E29A /* XYAdvField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670921A80B96C0049E29A /* XYAdvField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C61A80C2470049E29A /* XYAdvFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670941A80B96C0049E29A /* XYAdvFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C71A80C2470049E29A /* XYAdvFieldViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670951A80B96C0049E29A /* XYAdvFieldViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C81A80C2470049E29A /* XYAdvSearchField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670961A80B96C0049E29A /* XYAdvSearchField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671C91A80C2470049E29A /* XYAdvSearchFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670981A80B96D0049E29A /* XYAdvSearchFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CA1A80C2470049E29A /* XYAdvSearchFieldViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670991A80B96D0049E29A /* XYAdvSearchFieldViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CB1A80C2470049E29A /* XYDatePickerField.h in Headers */ = {isa = PBXBuildFile; fileRef = E276709B1A80B96D0049E29A /* XYDatePickerField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CC1A80C2470049E29A /* XYDynaSearchField.h in Headers */ = {isa = PBXBuildFile; fileRef = E276709D1A80B96D0049E29A /* XYDynaSearchField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CD1A80C2470049E29A /* XYDynaSearchFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E276709F1A80B96D0049E29A /* XYDynaSearchFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CE1A80C2470049E29A /* XYDynaSearchFieldViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670A01A80B96D0049E29A /* XYDynaSearchFieldViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671CF1A80C2470049E29A /* XYDynaSearchSelectionField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670A21A80B96D0049E29A /* XYDynaSearchSelectionField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D01A80C2470049E29A /* XYDynaSearchSelectionFieldViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670A41A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D11A80C2470049E29A /* XYField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670A61A80B96D0049E29A /* XYField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D21A80C2470049E29A /* XYInputTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670A81A80B96D0049E29A /* XYInputTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D31A80C2470049E29A /* XYInputTextViewField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670AA1A80B96D0049E29A /* XYInputTextViewField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D41A80C2470049E29A /* XYPickerField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670AC1A80B96D0049E29A /* XYPickerField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D51A80C2470049E29A /* XYSelectionField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670AE1A80B96D0049E29A /* XYSelectionField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D61A80C2470049E29A /* XYSelectionFieldDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670B01A80B96D0049E29A /* XYSelectionFieldDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D71A80C2470049E29A /* XYSelectionItemField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670B11A80B96D0049E29A /* XYSelectionItemField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D81A80C2470049E29A /* XYSelectOptionField.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670B31A80B96D0049E29A /* XYSelectOptionField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671D91A80C2470049E29A /* XYUIDatePickerTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670B51A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DA1A80C2470049E29A /* XYConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670B81A80B96D0049E29A /* XYConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DB1A80C2470049E29A /* XYConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670BA1A80B96D0049E29A /* XYConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DC1A80C2470049E29A /* XYConnectorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670BC1A80B96D0049E29A /* XYConnectorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DD1A80C2470049E29A /* XYRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670BE1A80B96D0049E29A /* XYRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DE1A80C2470049E29A /* XYResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670C01A80B96D0049E29A /* XYResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671DF1A80C2470049E29A /* XYCoreDataConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670C31A80B96D0049E29A /* XYCoreDataConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E01A80C2470049E29A /* XYCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670C51A80B96D0049E29A /* XYCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E11A80C2470049E29A /* XYStorageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670C71A80B96D0049E29A /* XYStorageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E21A80C2470049E29A /* XYBubbleTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670CB1A80B96D0049E29A /* XYBubbleTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E31A80C2480049E29A /* XYButtonTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670CD1A80B96D0049E29A /* XYButtonTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E41A80C2480049E29A /* XYDummyTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670CF1A80B96D0049E29A /* XYDummyTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E51A80C2480049E29A /* XYDynamicTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670D11A80B96D0049E29A /* XYDynamicTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E61A80C2480049E29A /* XYExpandableTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670D31A80B96D0049E29A /* XYExpandableTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E71A80C2480049E29A /* XYRollableTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670D51A80B96D0049E29A /* XYRollableTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E81A80C2480049E29A /* XYSelectionItemTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670D71A80B96D0049E29A /* XYSelectionItemTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671E91A80C2480049E29A /* XYSelectionTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670D91A80B96D0049E29A /* XYSelectionTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671EA1A80C2480049E29A /* XYTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670DB1A80B96D0049E29A /* XYTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671EB1A80C2480049E29A /* XYValueHelpTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670DD1A80B96D0049E29A /* XYValueHelpTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671EC1A80C2480049E29A /* XYBaseUITableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670DF1A80B96D0049E29A /* XYBaseUITableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671ED1A80C2480049E29A /* XYBaseUITableViewMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670E11A80B96D0049E29A /* XYBaseUITableViewMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671EE1A80C2480049E29A /* XYLoadMore.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670E21A80B96D0049E29A /* XYLoadMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671EF1A80C2480049E29A /* XYTableCellFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670E31A80B96D0049E29A /* XYTableCellFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F01A80C2480049E29A /* XYTableContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670E51A80B96D0049E29A /* XYTableContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F11A80C2480049E29A /* XYTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670E71A80B96D0049E29A /* XYTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F21A80C2480049E29A /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670EB1A80B96D0049E29A /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F31A80C2480049E29A /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670ED1A80B96D0049E29A /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F41A80C2490049E29A /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670EF1A80B96D0049E29A /* NSObject+SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F51A80C2490049E29A /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670F11A80B96D0049E29A /* SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F61A80C2490049E29A /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670F21A80B96D0049E29A /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F71A80C2490049E29A /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670F41A80B96D0049E29A /* SBJsonStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F81A80C2490049E29A /* SBJsonStreamParserAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670F61A80B96D0049E29A /* SBJsonStreamParserAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671F91A80C2490049E29A /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670F81A80B96D0049E29A /* SBJsonStreamParserAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FA1A80C2490049E29A /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670FA1A80B96D0049E29A /* SBJsonStreamParserState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FB1A80C2490049E29A /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670FC1A80B96D0049E29A /* SBJsonStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FC1A80C2490049E29A /* SBJsonStreamWriterAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = E27670FE1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FD1A80C2490049E29A /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671001A80B96D0049E29A /* SBJsonStreamWriterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FE1A80C2490049E29A /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671021A80B96D0049E29A /* SBJsonTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27671FF1A80C2490049E29A /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671041A80B96D0049E29A /* SBJsonUTF8Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672001A80C2490049E29A /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671061A80B96D0049E29A /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672011A80C24A0049E29A /* XYBaseAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671091A80B96D0049E29A /* XYBaseAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672021A80C24A0049E29A /* XYBaseErrorCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E276710B1A80B96D0049E29A /* XYBaseErrorCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672031A80C24A0049E29A /* XYBusyProcessDelegate2.h in Headers */ = {isa = PBXBuildFile; fileRef = E276710D1A80B96D0049E29A /* XYBusyProcessDelegate2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672041A80C24A0049E29A /* XYBusyProcessorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E276710E1A80B96D0049E29A /* XYBusyProcessorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672051A80C24A0049E29A /* XYErrorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E276710F1A80B96D0049E29A /* XYErrorInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672061A80C24A0049E29A /* XYFieldSelectOption.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671111A80B96D0049E29A /* XYFieldSelectOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672071A80C24A0049E29A /* XYKeyboardListener.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671131A80B96D0049E29A /* XYKeyboardListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672081A80C6D70049E29A /* XYLabelValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671151A80B96D0049E29A /* XYLabelValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672091A80C6D70049E29A /* XYSelectOption.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671171A80B96D0049E29A /* XYSelectOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720A1A80C6D70049E29A /* XYSelectorObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671191A80B96D0049E29A /* XYSelectorObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720B1A80C6D70049E29A /* XYSkinManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E276711B1A80B96D0049E29A /* XYSkinManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720C1A80C6D70049E29A /* XYStatusUpdateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E276711D1A80B96D0049E29A /* XYStatusUpdateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720D1A80C6D70049E29A /* XYUISelectionTextViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E276711E1A80B96D0049E29A /* XYUISelectionTextViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720E1A80C6D70049E29A /* XYUIStatusUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671201A80B96D0049E29A /* XYUIStatusUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276720F1A80C6D70049E29A /* XYUITextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671221A80B96D0049E29A /* XYUITextFieldDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672101A80C6D70049E29A /* XYUITextViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671241A80B96D0049E29A /* XYUITextViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672111A80C6D70049E29A /* XYUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671261A80B96D0049E29A /* XYUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672121A80C6D70049E29A /* XYBasePopOverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671291A80B96D0049E29A /* XYBasePopOverViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672131A80C6D70049E29A /* XYBaseSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E276712B1A80B96D0049E29A /* XYBaseSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672141A80C6D70049E29A /* XYBaseUITabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = E276712D1A80B96D0049E29A /* XYBaseUITabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672151A80C6D70049E29A /* XYBaseUITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E276712F1A80B96D0049E29A /* XYBaseUITableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672161A80C6D70049E29A /* XYBaseUIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671311A80B96D0049E29A /* XYBaseUIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672171A80C6D70049E29A /* XYErrorReportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671331A80B96D0049E29A /* XYErrorReportViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672181A80C6D70049E29A /* XYProcessResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671351A80B96D0049E29A /* XYProcessResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672191A80C6D70049E29A /* XYSelectionListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671371A80B96D0049E29A /* XYSelectionListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721A1A80C6D70049E29A /* XYSelectOptionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671391A80B96D0049E29A /* XYSelectOptionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721B1A80C6D70049E29A /* XYVersionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E276713B1A80B96D0049E29A /* XYVersionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721C1A80C6D70049E29A /* XYWelcomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E276713D1A80B96D0049E29A /* XYWelcomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721D1A80C6D70049E29A /* XYActivityIndicatorIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671401A80B96D0049E29A /* XYActivityIndicatorIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721E1A80C6D70049E29A /* XYActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671421A80B96D0049E29A /* XYActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276721F1A80C6D70049E29A /* XYAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671441A80B96D0049E29A /* XYAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672201A80C6D70049E29A /* XYAnimationViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671461A80B96D0049E29A /* XYAnimationViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672211A80C6D70049E29A /* XYBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671471A80B96D0049E29A /* XYBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672221A80C6D70049E29A /* XYBubbleView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671491A80B96D0049E29A /* XYBubbleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672231A80C6D70049E29A /* XYFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = E276714B1A80B96D0049E29A /* XYFieldView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672241A80C6D70049E29A /* XYInputTextFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = E276714D1A80B96D0049E29A /* XYInputTextFieldView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672251A80C6D70049E29A /* XYInputTextViewView.h in Headers */ = {isa = PBXBuildFile; fileRef = E276714F1A80B96D0049E29A /* XYInputTextViewView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672261A80C6D70049E29A /* XYNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671511A80B96D0049E29A /* XYNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672271A80C6D70049E29A /* XYProcessbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671531A80B96D0049E29A /* XYProcessbarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672281A80C6D70049E29A /* XYProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671551A80B96D0049E29A /* XYProgressIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27672291A80C6D70049E29A /* XYSideView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671571A80B96D0049E29A /* XYSideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276722A1A80C6D70049E29A /* XYUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = E27671591A80B96D0049E29A /* XYUIAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276722B1A80C6D80049E29A /* XYUIAlertView2.h in Headers */ = {isa = PBXBuildFile; fileRef = E276715B1A80B96D0049E29A /* XYUIAlertView2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276722C1A80C6D80049E29A /* XYViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E276715D1A80B96D0049E29A /* XYViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E276722D1A80C7190049E29A /* XYUIDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9D4161A5F56D70086201D /* XYUIDesign.m */; };
+		E28AE75D1B5DED230069EFC1 /* TestXYBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AE75C1B5DED230069EFC1 /* TestXYBaseUIViewController.m */; };
+		E28AE7601B5DED3D0069EFC1 /* TestXYBaseUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AE75F1B5DED3D0069EFC1 /* TestXYBaseUITableViewController.m */; };
+		E28AE7621B5E11600069EFC1 /* XYAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E28AE7611B5E11600069EFC1 /* XYAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28AE7651B5E121A0069EFC1 /* XYActivityIndicatorBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = E28AE7631B5E121A0069EFC1 /* XYActivityIndicatorBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28AE7661B5E121A0069EFC1 /* XYActivityIndicatorBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AE7641B5E121A0069EFC1 /* XYActivityIndicatorBarView.m */; };
+		E28AE7691B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = E28AE7671B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.h */; };
+		E28AE76A1B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E28AE7681B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.m */; };
+		E28EBB911A8B1D9B00F05E4E /* libXYUIDesign.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E276707A1A80B8C60049E29A /* libXYUIDesign.a */; };
+		E2B101671B68595C007A1127 /* TestDragControlVc.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B101661B68595C007A1127 /* TestDragControlVc.m */; };
+		E2B1016A1B69F886007A1127 /* XYUIDragView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B101681B69F886007A1127 /* XYUIDragView.h */; };
+		E2B1016B1B69F886007A1127 /* XYUIDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B101691B69F886007A1127 /* XYUIDragView.m */; };
+		E2D9B96E1A5E722E00FBBEFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B96D1A5E722E00FBBEFC /* main.m */; };
+		E2D9B9711A5E722E00FBBEFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B9701A5E722E00FBBEFC /* AppDelegate.m */; };
+		E2D9B9741A5E722E00FBBEFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B9731A5E722E00FBBEFC /* ViewController.m */; };
+		E2D9B9771A5E722E00FBBEFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B9751A5E722E00FBBEFC /* Main.storyboard */; };
+		E2D9B9791A5E722E00FBBEFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B9781A5E722E00FBBEFC /* Images.xcassets */; };
+		E2D9B97C1A5E722E00FBBEFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B97A1A5E722E00FBBEFC /* LaunchScreen.xib */; };
+		E2D9B9881A5E722E00FBBEFC /* MarioLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B9871A5E722E00FBBEFC /* MarioLibTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E27670861A80B8C70049E29A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D9B9601A5E722E00FBBEFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E27670791A80B8C60049E29A;
+			remoteInfo = XYUIDesign;
+		};
+		E2D9B9821A5E722E00FBBEFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D9B9601A5E722E00FBBEFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D9B9671A5E722E00FBBEFC;
+			remoteInfo = MarioLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E27670781A80B8C60049E29A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E27590561A8304D300E4C136 /* XYMessageAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMessageAgent.h; sourceTree = "<group>"; };
+		E27590571A8304D300E4C136 /* XYMessageAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMessageAgent.m; sourceTree = "<group>"; };
+		E275905A1A83057200E4C136 /* XYMessageEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYMessageEngine.h; sourceTree = "<group>"; };
+		E275905B1A83057200E4C136 /* XYMessageEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYMessageEngine.m; sourceTree = "<group>"; };
+		E275905E1A83101500E4C136 /* MessageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageItem.h; sourceTree = "<group>"; };
+		E275905F1A83101500E4C136 /* MessageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageItem.m; sourceTree = "<group>"; };
+		E27590611A83155600E4C136 /* XYUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUISegmentedControl.h; sourceTree = "<group>"; };
+		E27590621A83155600E4C136 /* XYUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUISegmentedControl.m; sourceTree = "<group>"; };
+		E27590651A83184200E4C136 /* XYPagedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPagedView.h; sourceTree = "<group>"; };
+		E27590661A83184200E4C136 /* XYPagedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPagedView.m; sourceTree = "<group>"; };
+		E27590691A831A3B00E4C136 /* XYImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYImageListView.h; sourceTree = "<group>"; };
+		E275906A1A831A3B00E4C136 /* XYImageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYImageListView.m; sourceTree = "<group>"; };
+		E275906E1A8355DA00E4C136 /* AppBaseUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBaseUITableViewController.h; sourceTree = "<group>"; };
+		E275906F1A8355DA00E4C136 /* AppBaseUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBaseUITableViewController.m; sourceTree = "<group>"; };
+		E27590781A8499E100E4C136 /* MessageDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDict.h; sourceTree = "<group>"; };
+		E27590791A8499E100E4C136 /* MessageDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDict.m; sourceTree = "<group>"; };
+		E2766E301A7239710049E29A /* AllSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllSampleViewController.h; sourceTree = "<group>"; };
+		E2766E311A7239710049E29A /* AllSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllSampleViewController.m; sourceTree = "<group>"; };
+		E2766E331A723CF50049E29A /* StandardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardTableViewController.h; sourceTree = "<group>"; };
+		E2766E341A723CF50049E29A /* StandardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardTableViewController.m; sourceTree = "<group>"; };
+		E2766E371A761CA50049E29A /* libUMessage_Sdk_1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.1.0.a; sourceTree = "<group>"; };
+		E2766E381A761CA50049E29A /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		E276707A1A80B8C60049E29A /* libXYUIDesign.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXYUIDesign.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27670841A80B8C60049E29A /* XYUIDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYUIDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E276708A1A80B8C70049E29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E27670921A80B96C0049E29A /* XYAdvField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvField.h; sourceTree = "<group>"; };
+		E27670931A80B96C0049E29A /* XYAdvField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAdvField.m; sourceTree = "<group>"; };
+		E27670941A80B96C0049E29A /* XYAdvFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvFieldDelegate.h; sourceTree = "<group>"; };
+		E27670951A80B96C0049E29A /* XYAdvFieldViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvFieldViewControllerDelegate.h; sourceTree = "<group>"; };
+		E27670961A80B96C0049E29A /* XYAdvSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvSearchField.h; sourceTree = "<group>"; };
+		E27670971A80B96C0049E29A /* XYAdvSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAdvSearchField.m; sourceTree = "<group>"; };
+		E27670981A80B96D0049E29A /* XYAdvSearchFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvSearchFieldDelegate.h; sourceTree = "<group>"; };
+		E27670991A80B96D0049E29A /* XYAdvSearchFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAdvSearchFieldViewController.h; sourceTree = "<group>"; };
+		E276709A1A80B96D0049E29A /* XYAdvSearchFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAdvSearchFieldViewController.m; sourceTree = "<group>"; };
+		E276709B1A80B96D0049E29A /* XYDatePickerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDatePickerField.h; sourceTree = "<group>"; };
+		E276709C1A80B96D0049E29A /* XYDatePickerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDatePickerField.m; sourceTree = "<group>"; };
+		E276709D1A80B96D0049E29A /* XYDynaSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynaSearchField.h; sourceTree = "<group>"; };
+		E276709E1A80B96D0049E29A /* XYDynaSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDynaSearchField.m; sourceTree = "<group>"; };
+		E276709F1A80B96D0049E29A /* XYDynaSearchFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynaSearchFieldDelegate.h; sourceTree = "<group>"; };
+		E27670A01A80B96D0049E29A /* XYDynaSearchFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynaSearchFieldViewController.h; sourceTree = "<group>"; };
+		E27670A11A80B96D0049E29A /* XYDynaSearchFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDynaSearchFieldViewController.m; sourceTree = "<group>"; };
+		E27670A21A80B96D0049E29A /* XYDynaSearchSelectionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynaSearchSelectionField.h; sourceTree = "<group>"; };
+		E27670A31A80B96D0049E29A /* XYDynaSearchSelectionField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDynaSearchSelectionField.m; sourceTree = "<group>"; };
+		E27670A41A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynaSearchSelectionFieldViewController.h; sourceTree = "<group>"; };
+		E27670A51A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDynaSearchSelectionFieldViewController.m; sourceTree = "<group>"; };
+		E27670A61A80B96D0049E29A /* XYField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYField.h; sourceTree = "<group>"; };
+		E27670A71A80B96D0049E29A /* XYField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYField.m; sourceTree = "<group>"; };
+		E27670A81A80B96D0049E29A /* XYInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInputTextField.h; sourceTree = "<group>"; };
+		E27670A91A80B96D0049E29A /* XYInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInputTextField.m; sourceTree = "<group>"; };
+		E27670AA1A80B96D0049E29A /* XYInputTextViewField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInputTextViewField.h; sourceTree = "<group>"; };
+		E27670AB1A80B96D0049E29A /* XYInputTextViewField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInputTextViewField.m; sourceTree = "<group>"; };
+		E27670AC1A80B96D0049E29A /* XYPickerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPickerField.h; sourceTree = "<group>"; };
+		E27670AD1A80B96D0049E29A /* XYPickerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPickerField.m; sourceTree = "<group>"; };
+		E27670AE1A80B96D0049E29A /* XYSelectionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionField.h; sourceTree = "<group>"; };
+		E27670AF1A80B96D0049E29A /* XYSelectionField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectionField.m; sourceTree = "<group>"; };
+		E27670B01A80B96D0049E29A /* XYSelectionFieldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionFieldDataSource.h; sourceTree = "<group>"; };
+		E27670B11A80B96D0049E29A /* XYSelectionItemField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionItemField.h; sourceTree = "<group>"; };
+		E27670B21A80B96D0049E29A /* XYSelectionItemField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectionItemField.m; sourceTree = "<group>"; };
+		E27670B31A80B96D0049E29A /* XYSelectOptionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectOptionField.h; sourceTree = "<group>"; };
+		E27670B41A80B96D0049E29A /* XYSelectOptionField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectOptionField.m; sourceTree = "<group>"; };
+		E27670B51A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUIDatePickerTextFieldDelegate.h; sourceTree = "<group>"; };
+		E27670B61A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUIDatePickerTextFieldDelegate.m; sourceTree = "<group>"; };
+		E27670B81A80B96D0049E29A /* XYConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConnection.h; sourceTree = "<group>"; };
+		E27670B91A80B96D0049E29A /* XYConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConnection.m; sourceTree = "<group>"; };
+		E27670BA1A80B96D0049E29A /* XYConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConnector.h; sourceTree = "<group>"; };
+		E27670BB1A80B96D0049E29A /* XYConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConnector.m; sourceTree = "<group>"; };
+		E27670BC1A80B96D0049E29A /* XYConnectorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYConnectorManager.h; sourceTree = "<group>"; };
+		E27670BD1A80B96D0049E29A /* XYConnectorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYConnectorManager.m; sourceTree = "<group>"; };
+		E27670BE1A80B96D0049E29A /* XYRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRequest.h; sourceTree = "<group>"; };
+		E27670BF1A80B96D0049E29A /* XYRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRequest.m; sourceTree = "<group>"; };
+		E27670C01A80B96D0049E29A /* XYResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYResponse.h; sourceTree = "<group>"; };
+		E27670C11A80B96D0049E29A /* XYResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYResponse.m; sourceTree = "<group>"; };
+		E27670C31A80B96D0049E29A /* XYCoreDataConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCoreDataConnector.h; sourceTree = "<group>"; };
+		E27670C41A80B96D0049E29A /* XYCoreDataConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCoreDataConnector.m; sourceTree = "<group>"; };
+		E27670C51A80B96D0049E29A /* XYCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYCoreDataManager.h; sourceTree = "<group>"; };
+		E27670C61A80B96D0049E29A /* XYCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYCoreDataManager.m; sourceTree = "<group>"; };
+		E27670C71A80B96D0049E29A /* XYStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYStorageManager.h; sourceTree = "<group>"; };
+		E27670C81A80B96D0049E29A /* XYStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYStorageManager.m; sourceTree = "<group>"; };
+		E27670CB1A80B96D0049E29A /* XYBubbleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBubbleTableCell.h; sourceTree = "<group>"; };
+		E27670CC1A80B96D0049E29A /* XYBubbleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBubbleTableCell.m; sourceTree = "<group>"; };
+		E27670CD1A80B96D0049E29A /* XYButtonTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYButtonTableCell.h; sourceTree = "<group>"; };
+		E27670CE1A80B96D0049E29A /* XYButtonTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYButtonTableCell.m; sourceTree = "<group>"; };
+		E27670CF1A80B96D0049E29A /* XYDummyTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDummyTableCell.h; sourceTree = "<group>"; };
+		E27670D01A80B96D0049E29A /* XYDummyTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDummyTableCell.m; sourceTree = "<group>"; };
+		E27670D11A80B96D0049E29A /* XYDynamicTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDynamicTableCell.h; sourceTree = "<group>"; };
+		E27670D21A80B96D0049E29A /* XYDynamicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDynamicTableCell.m; sourceTree = "<group>"; };
+		E27670D31A80B96D0049E29A /* XYExpandableTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYExpandableTableCell.h; sourceTree = "<group>"; };
+		E27670D41A80B96D0049E29A /* XYExpandableTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYExpandableTableCell.m; sourceTree = "<group>"; };
+		E27670D51A80B96D0049E29A /* XYRollableTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYRollableTableCell.h; sourceTree = "<group>"; };
+		E27670D61A80B96D0049E29A /* XYRollableTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYRollableTableCell.m; sourceTree = "<group>"; };
+		E27670D71A80B96D0049E29A /* XYSelectionItemTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionItemTableCell.h; sourceTree = "<group>"; };
+		E27670D81A80B96D0049E29A /* XYSelectionItemTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectionItemTableCell.m; sourceTree = "<group>"; };
+		E27670D91A80B96D0049E29A /* XYSelectionTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionTableCell.h; sourceTree = "<group>"; };
+		E27670DA1A80B96D0049E29A /* XYSelectionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectionTableCell.m; sourceTree = "<group>"; };
+		E27670DB1A80B96D0049E29A /* XYTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableCell.h; sourceTree = "<group>"; };
+		E27670DC1A80B96D0049E29A /* XYTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableCell.m; sourceTree = "<group>"; };
+		E27670DD1A80B96D0049E29A /* XYValueHelpTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYValueHelpTableCell.h; sourceTree = "<group>"; };
+		E27670DE1A80B96D0049E29A /* XYValueHelpTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYValueHelpTableCell.m; sourceTree = "<group>"; };
+		E27670DF1A80B96D0049E29A /* XYBaseUITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseUITableViewDelegate.h; sourceTree = "<group>"; };
+		E27670E01A80B96D0049E29A /* XYBaseUITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseUITableViewDelegate.m; sourceTree = "<group>"; };
+		E27670E11A80B96D0049E29A /* XYBaseUITableViewMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseUITableViewMethods.h; sourceTree = "<group>"; };
+		E27670E21A80B96D0049E29A /* XYLoadMore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLoadMore.h; sourceTree = "<group>"; };
+		E27670E31A80B96D0049E29A /* XYTableCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableCellFactory.h; sourceTree = "<group>"; };
+		E27670E41A80B96D0049E29A /* XYTableCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableCellFactory.m; sourceTree = "<group>"; };
+		E27670E51A80B96D0049E29A /* XYTableContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableContainer.h; sourceTree = "<group>"; };
+		E27670E61A80B96D0049E29A /* XYTableContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableContainer.m; sourceTree = "<group>"; };
+		E27670E71A80B96D0049E29A /* XYTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTableSection.h; sourceTree = "<group>"; };
+		E27670E81A80B96D0049E29A /* XYTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTableSection.m; sourceTree = "<group>"; };
+		E27670EB1A80B96D0049E29A /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E27670EC1A80B96D0049E29A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E27670ED1A80B96D0049E29A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E27670EF1A80B96D0049E29A /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		E27670F01A80B96D0049E29A /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		E27670F11A80B96D0049E29A /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		E27670F21A80B96D0049E29A /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		E27670F31A80B96D0049E29A /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		E27670F41A80B96D0049E29A /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		E27670F51A80B96D0049E29A /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		E27670F61A80B96D0049E29A /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		E27670F71A80B96D0049E29A /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		E27670F81A80B96D0049E29A /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		E27670F91A80B96D0049E29A /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		E27670FA1A80B96D0049E29A /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		E27670FB1A80B96D0049E29A /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		E27670FC1A80B96D0049E29A /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		E27670FD1A80B96D0049E29A /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		E27670FE1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		E27670FF1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		E27671001A80B96D0049E29A /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		E27671011A80B96D0049E29A /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		E27671021A80B96D0049E29A /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		E27671031A80B96D0049E29A /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		E27671041A80B96D0049E29A /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		E27671051A80B96D0049E29A /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		E27671061A80B96D0049E29A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		E27671071A80B96D0049E29A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E27671091A80B96D0049E29A /* XYBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseAppDelegate.h; sourceTree = "<group>"; };
+		E276710A1A80B96D0049E29A /* XYBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseAppDelegate.m; sourceTree = "<group>"; };
+		E276710B1A80B96D0049E29A /* XYBaseErrorCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseErrorCenter.h; sourceTree = "<group>"; };
+		E276710C1A80B96D0049E29A /* XYBaseErrorCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseErrorCenter.m; sourceTree = "<group>"; };
+		E276710D1A80B96D0049E29A /* XYBusyProcessDelegate2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBusyProcessDelegate2.h; sourceTree = "<group>"; };
+		E276710E1A80B96D0049E29A /* XYBusyProcessorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBusyProcessorDelegate.h; sourceTree = "<group>"; };
+		E276710F1A80B96D0049E29A /* XYErrorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYErrorInfo.h; sourceTree = "<group>"; };
+		E27671101A80B96D0049E29A /* XYErrorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYErrorInfo.m; sourceTree = "<group>"; };
+		E27671111A80B96D0049E29A /* XYFieldSelectOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYFieldSelectOption.h; sourceTree = "<group>"; };
+		E27671121A80B96D0049E29A /* XYFieldSelectOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYFieldSelectOption.m; sourceTree = "<group>"; };
+		E27671131A80B96D0049E29A /* XYKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYKeyboardListener.h; sourceTree = "<group>"; };
+		E27671141A80B96D0049E29A /* XYKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYKeyboardListener.m; sourceTree = "<group>"; };
+		E27671151A80B96D0049E29A /* XYLabelValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYLabelValue.h; sourceTree = "<group>"; };
+		E27671161A80B96D0049E29A /* XYLabelValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLabelValue.m; sourceTree = "<group>"; };
+		E27671171A80B96D0049E29A /* XYSelectOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectOption.h; sourceTree = "<group>"; };
+		E27671181A80B96D0049E29A /* XYSelectOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectOption.m; sourceTree = "<group>"; };
+		E27671191A80B96D0049E29A /* XYSelectorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectorObject.h; sourceTree = "<group>"; };
+		E276711A1A80B96D0049E29A /* XYSelectorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectorObject.m; sourceTree = "<group>"; };
+		E276711B1A80B96D0049E29A /* XYSkinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSkinManager.h; sourceTree = "<group>"; };
+		E276711C1A80B96D0049E29A /* XYSkinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSkinManager.m; sourceTree = "<group>"; };
+		E276711D1A80B96D0049E29A /* XYStatusUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYStatusUpdateDelegate.h; sourceTree = "<group>"; };
+		E276711E1A80B96D0049E29A /* XYUISelectionTextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUISelectionTextViewDelegate.h; sourceTree = "<group>"; };
+		E276711F1A80B96D0049E29A /* XYUISelectionTextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUISelectionTextViewDelegate.m; sourceTree = "<group>"; };
+		E27671201A80B96D0049E29A /* XYUIStatusUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUIStatusUpdater.h; sourceTree = "<group>"; };
+		E27671211A80B96D0049E29A /* XYUIStatusUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUIStatusUpdater.m; sourceTree = "<group>"; };
+		E27671221A80B96D0049E29A /* XYUITextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUITextFieldDelegate.h; sourceTree = "<group>"; };
+		E27671231A80B96D0049E29A /* XYUITextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUITextFieldDelegate.m; sourceTree = "<group>"; };
+		E27671241A80B96D0049E29A /* XYUITextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUITextViewDelegate.h; sourceTree = "<group>"; };
+		E27671251A80B96D0049E29A /* XYUITextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUITextViewDelegate.m; sourceTree = "<group>"; };
+		E27671261A80B96D0049E29A /* XYUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUtility.h; sourceTree = "<group>"; };
+		E27671271A80B96D0049E29A /* XYUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUtility.m; sourceTree = "<group>"; };
+		E27671291A80B96D0049E29A /* XYBasePopOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBasePopOverViewController.h; sourceTree = "<group>"; };
+		E276712A1A80B96D0049E29A /* XYBasePopOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBasePopOverViewController.m; sourceTree = "<group>"; };
+		E276712B1A80B96D0049E29A /* XYBaseSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseSplitViewController.h; sourceTree = "<group>"; };
+		E276712C1A80B96D0049E29A /* XYBaseSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseSplitViewController.m; sourceTree = "<group>"; };
+		E276712D1A80B96D0049E29A /* XYBaseUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseUITabBarController.h; sourceTree = "<group>"; };
+		E276712E1A80B96D0049E29A /* XYBaseUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseUITabBarController.m; sourceTree = "<group>"; };
+		E276712F1A80B96D0049E29A /* XYBaseUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseUITableViewController.h; sourceTree = "<group>"; };
+		E27671301A80B96D0049E29A /* XYBaseUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseUITableViewController.m; sourceTree = "<group>"; };
+		E27671311A80B96D0049E29A /* XYBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseUIViewController.h; sourceTree = "<group>"; };
+		E27671321A80B96D0049E29A /* XYBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseUIViewController.m; sourceTree = "<group>"; };
+		E27671331A80B96D0049E29A /* XYErrorReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYErrorReportViewController.h; sourceTree = "<group>"; };
+		E27671341A80B96D0049E29A /* XYErrorReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYErrorReportViewController.m; sourceTree = "<group>"; };
+		E27671351A80B96D0049E29A /* XYProcessResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYProcessResult.h; sourceTree = "<group>"; };
+		E27671361A80B96D0049E29A /* XYProcessResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYProcessResult.m; sourceTree = "<group>"; };
+		E27671371A80B96D0049E29A /* XYSelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectionListViewController.h; sourceTree = "<group>"; };
+		E27671381A80B96D0049E29A /* XYSelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectionListViewController.m; sourceTree = "<group>"; };
+		E27671391A80B96D0049E29A /* XYSelectOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSelectOptionViewController.h; sourceTree = "<group>"; };
+		E276713A1A80B96D0049E29A /* XYSelectOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSelectOptionViewController.m; sourceTree = "<group>"; };
+		E276713B1A80B96D0049E29A /* XYVersionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYVersionViewController.h; sourceTree = "<group>"; };
+		E276713C1A80B96D0049E29A /* XYVersionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYVersionViewController.m; sourceTree = "<group>"; };
+		E276713D1A80B96D0049E29A /* XYWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWelcomeViewController.h; sourceTree = "<group>"; };
+		E276713E1A80B96D0049E29A /* XYWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWelcomeViewController.m; sourceTree = "<group>"; };
+		E27671401A80B96D0049E29A /* XYActivityIndicatorIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityIndicatorIconView.h; sourceTree = "<group>"; };
+		E27671411A80B96D0049E29A /* XYActivityIndicatorIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityIndicatorIconView.m; sourceTree = "<group>"; };
+		E27671421A80B96D0049E29A /* XYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityIndicatorView.h; sourceTree = "<group>"; };
+		E27671431A80B96D0049E29A /* XYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityIndicatorView.m; sourceTree = "<group>"; };
+		E27671441A80B96D0049E29A /* XYAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAnimationView.h; sourceTree = "<group>"; };
+		E27671451A80B96D0049E29A /* XYAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAnimationView.m; sourceTree = "<group>"; };
+		E27671461A80B96D0049E29A /* XYAnimationViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAnimationViewDelegate.h; sourceTree = "<group>"; };
+		E27671471A80B96D0049E29A /* XYBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBaseView.h; sourceTree = "<group>"; };
+		E27671481A80B96D0049E29A /* XYBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBaseView.m; sourceTree = "<group>"; };
+		E27671491A80B96D0049E29A /* XYBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYBubbleView.h; sourceTree = "<group>"; };
+		E276714A1A80B96D0049E29A /* XYBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYBubbleView.m; sourceTree = "<group>"; };
+		E276714B1A80B96D0049E29A /* XYFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYFieldView.h; sourceTree = "<group>"; };
+		E276714C1A80B96D0049E29A /* XYFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYFieldView.m; sourceTree = "<group>"; };
+		E276714D1A80B96D0049E29A /* XYInputTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInputTextFieldView.h; sourceTree = "<group>"; };
+		E276714E1A80B96D0049E29A /* XYInputTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInputTextFieldView.m; sourceTree = "<group>"; };
+		E276714F1A80B96D0049E29A /* XYInputTextViewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInputTextViewView.h; sourceTree = "<group>"; };
+		E27671501A80B96D0049E29A /* XYInputTextViewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInputTextViewView.m; sourceTree = "<group>"; };
+		E27671511A80B96D0049E29A /* XYNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNotificationView.h; sourceTree = "<group>"; };
+		E27671521A80B96D0049E29A /* XYNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNotificationView.m; sourceTree = "<group>"; };
+		E27671531A80B96D0049E29A /* XYProcessbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYProcessbarView.h; sourceTree = "<group>"; };
+		E27671541A80B96D0049E29A /* XYProcessbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYProcessbarView.m; sourceTree = "<group>"; };
+		E27671551A80B96D0049E29A /* XYProgressIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYProgressIndicatorView.h; sourceTree = "<group>"; };
+		E27671561A80B96D0049E29A /* XYProgressIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYProgressIndicatorView.m; sourceTree = "<group>"; };
+		E27671571A80B96D0049E29A /* XYSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSideView.h; sourceTree = "<group>"; };
+		E27671581A80B96D0049E29A /* XYSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSideView.m; sourceTree = "<group>"; };
+		E27671591A80B96D0049E29A /* XYUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUIAlertView.h; sourceTree = "<group>"; };
+		E276715A1A80B96D0049E29A /* XYUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUIAlertView.m; sourceTree = "<group>"; };
+		E276715B1A80B96D0049E29A /* XYUIAlertView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUIAlertView2.h; sourceTree = "<group>"; };
+		E276715C1A80B96D0049E29A /* XYUIAlertView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUIAlertView2.m; sourceTree = "<group>"; };
+		E276715D1A80B96D0049E29A /* XYViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYViewDelegate.h; sourceTree = "<group>"; };
+		E27671BA1A80BA520049E29A /* UIDesighHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDesighHeader.h; path = MarioLib/UIDesighHeader.h; sourceTree = SOURCE_ROOT; };
+		E28AE75B1B5DED230069EFC1 /* TestXYBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXYBaseUIViewController.h; sourceTree = "<group>"; };
+		E28AE75C1B5DED230069EFC1 /* TestXYBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXYBaseUIViewController.m; sourceTree = "<group>"; };
+		E28AE75E1B5DED3D0069EFC1 /* TestXYBaseUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXYBaseUITableViewController.h; sourceTree = "<group>"; };
+		E28AE75F1B5DED3D0069EFC1 /* TestXYBaseUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXYBaseUITableViewController.m; sourceTree = "<group>"; };
+		E28AE7611B5E11600069EFC1 /* XYAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAnimation.h; sourceTree = "<group>"; };
+		E28AE7631B5E121A0069EFC1 /* XYActivityIndicatorBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityIndicatorBarView.h; sourceTree = "<group>"; };
+		E28AE7641B5E121A0069EFC1 /* XYActivityIndicatorBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityIndicatorBarView.m; sourceTree = "<group>"; };
+		E28AE7671B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYActivityIndicatorCircleView.h; sourceTree = "<group>"; };
+		E28AE7681B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYActivityIndicatorCircleView.m; sourceTree = "<group>"; };
+		E2B101651B68595C007A1127 /* TestDragControlVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDragControlVc.h; sourceTree = "<group>"; };
+		E2B101661B68595C007A1127 /* TestDragControlVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDragControlVc.m; sourceTree = "<group>"; };
+		E2B101681B69F886007A1127 /* XYUIDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYUIDragView.h; sourceTree = "<group>"; };
+		E2B101691B69F886007A1127 /* XYUIDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYUIDragView.m; sourceTree = "<group>"; };
+		E2D9B9681A5E722E00FBBEFC /* MarioLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D9B96C1A5E722E00FBBEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D9B96D1A5E722E00FBBEFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2D9B96F1A5E722E00FBBEFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2D9B9701A5E722E00FBBEFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2D9B9721A5E722E00FBBEFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2D9B9731A5E722E00FBBEFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2D9B9761A5E722E00FBBEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2D9B9781A5E722E00FBBEFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2D9B97B1A5E722E00FBBEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E2D9B9811A5E722E00FBBEFC /* MarioLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarioLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D9B9861A5E722E00FBBEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D9B9871A5E722E00FBBEFC /* MarioLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarioLibTests.m; sourceTree = "<group>"; };
+		E2E9D4151A5F56D70086201D /* XYUIDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYUIDesign.h; path = ../MarioLib/XYUIDesign.h; sourceTree = "<group>"; };
+		E2E9D4161A5F56D70086201D /* XYUIDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYUIDesign.m; path = ../MarioLib/XYUIDesign.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E27670771A80B8C60049E29A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27670811A80B8C60049E29A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27670851A80B8C70049E29A /* libXYUIDesign.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B9651A5E722E00FBBEFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28EBB911A8B1D9B00F05E4E /* libXYUIDesign.a in Frameworks */,
+				E2766E391A761CA50049E29A /* libUMessage_Sdk_1.1.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B97E1A5E722E00FBBEFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E275904C1A81FE4600E4C136 /* TestMessage */ = {
+			isa = PBXGroup;
+			children = (
+				E275905E1A83101500E4C136 /* MessageItem.h */,
+				E275905F1A83101500E4C136 /* MessageItem.m */,
+				E27590781A8499E100E4C136 /* MessageDict.h */,
+				E27590791A8499E100E4C136 /* MessageDict.m */,
+			);
+			path = TestMessage;
+			sourceTree = "<group>";
+		};
+		E2766E361A761CA50049E29A /* UMessage_Sdk_1.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				E2766E371A761CA50049E29A /* libUMessage_Sdk_1.1.0.a */,
+				E2766E381A761CA50049E29A /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.1.0;
+			sourceTree = "<group>";
+		};
+		E276707B1A80B8C60049E29A /* XYUIDesign */ = {
+			isa = PBXGroup;
+			children = (
+				E27671BA1A80BA520049E29A /* UIDesighHeader.h */,
+				E2E9D4151A5F56D70086201D /* XYUIDesign.h */,
+				E2E9D4161A5F56D70086201D /* XYUIDesign.m */,
+				E27670911A80B96C0049E29A /* Fields */,
+				E27670B71A80B96D0049E29A /* Message */,
+				E27670C21A80B96D0049E29A /* Storage */,
+				E27670C91A80B96D0049E29A /* Table */,
+				E27670E91A80B96D0049E29A /* ThirdParty */,
+				E27671081A80B96D0049E29A /* Utility */,
+				E27671281A80B96D0049E29A /* ViewControllers */,
+				E276713F1A80B96D0049E29A /* Views */,
+			);
+			path = XYUIDesign;
+			sourceTree = "<group>";
+		};
+		E27670881A80B8C70049E29A /* XYUIDesignTests */ = {
+			isa = PBXGroup;
+			children = (
+				E27670891A80B8C70049E29A /* Supporting Files */,
+			);
+			path = XYUIDesignTests;
+			sourceTree = "<group>";
+		};
+		E27670891A80B8C70049E29A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E276708A1A80B8C70049E29A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E27670911A80B96C0049E29A /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				E27670921A80B96C0049E29A /* XYAdvField.h */,
+				E27670931A80B96C0049E29A /* XYAdvField.m */,
+				E27670941A80B96C0049E29A /* XYAdvFieldDelegate.h */,
+				E27670951A80B96C0049E29A /* XYAdvFieldViewControllerDelegate.h */,
+				E27670961A80B96C0049E29A /* XYAdvSearchField.h */,
+				E27670971A80B96C0049E29A /* XYAdvSearchField.m */,
+				E27670981A80B96D0049E29A /* XYAdvSearchFieldDelegate.h */,
+				E27670991A80B96D0049E29A /* XYAdvSearchFieldViewController.h */,
+				E276709A1A80B96D0049E29A /* XYAdvSearchFieldViewController.m */,
+				E276709B1A80B96D0049E29A /* XYDatePickerField.h */,
+				E276709C1A80B96D0049E29A /* XYDatePickerField.m */,
+				E276709D1A80B96D0049E29A /* XYDynaSearchField.h */,
+				E276709E1A80B96D0049E29A /* XYDynaSearchField.m */,
+				E276709F1A80B96D0049E29A /* XYDynaSearchFieldDelegate.h */,
+				E27670A01A80B96D0049E29A /* XYDynaSearchFieldViewController.h */,
+				E27670A11A80B96D0049E29A /* XYDynaSearchFieldViewController.m */,
+				E27670A21A80B96D0049E29A /* XYDynaSearchSelectionField.h */,
+				E27670A31A80B96D0049E29A /* XYDynaSearchSelectionField.m */,
+				E27670A41A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.h */,
+				E27670A51A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.m */,
+				E27670A61A80B96D0049E29A /* XYField.h */,
+				E27670A71A80B96D0049E29A /* XYField.m */,
+				E27670A81A80B96D0049E29A /* XYInputTextField.h */,
+				E27670A91A80B96D0049E29A /* XYInputTextField.m */,
+				E27670AA1A80B96D0049E29A /* XYInputTextViewField.h */,
+				E27670AB1A80B96D0049E29A /* XYInputTextViewField.m */,
+				E27670AC1A80B96D0049E29A /* XYPickerField.h */,
+				E27670AD1A80B96D0049E29A /* XYPickerField.m */,
+				E27670AE1A80B96D0049E29A /* XYSelectionField.h */,
+				E27670AF1A80B96D0049E29A /* XYSelectionField.m */,
+				E27670B01A80B96D0049E29A /* XYSelectionFieldDataSource.h */,
+				E27670B11A80B96D0049E29A /* XYSelectionItemField.h */,
+				E27670B21A80B96D0049E29A /* XYSelectionItemField.m */,
+				E27670B31A80B96D0049E29A /* XYSelectOptionField.h */,
+				E27670B41A80B96D0049E29A /* XYSelectOptionField.m */,
+				E27670B51A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.h */,
+				E27670B61A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.m */,
+			);
+			name = Fields;
+			path = MarioLib/Fields;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27670B71A80B96D0049E29A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E27670B81A80B96D0049E29A /* XYConnection.h */,
+				E27670B91A80B96D0049E29A /* XYConnection.m */,
+				E27670BA1A80B96D0049E29A /* XYConnector.h */,
+				E27670BB1A80B96D0049E29A /* XYConnector.m */,
+				E27670BC1A80B96D0049E29A /* XYConnectorManager.h */,
+				E27670BD1A80B96D0049E29A /* XYConnectorManager.m */,
+				E27670BE1A80B96D0049E29A /* XYRequest.h */,
+				E27670BF1A80B96D0049E29A /* XYRequest.m */,
+				E27670C01A80B96D0049E29A /* XYResponse.h */,
+				E27670C11A80B96D0049E29A /* XYResponse.m */,
+				E27590561A8304D300E4C136 /* XYMessageAgent.h */,
+				E27590571A8304D300E4C136 /* XYMessageAgent.m */,
+				E275905A1A83057200E4C136 /* XYMessageEngine.h */,
+				E275905B1A83057200E4C136 /* XYMessageEngine.m */,
+			);
+			name = Message;
+			path = MarioLib/Message;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27670C21A80B96D0049E29A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E27670C31A80B96D0049E29A /* XYCoreDataConnector.h */,
+				E27670C41A80B96D0049E29A /* XYCoreDataConnector.m */,
+				E27670C51A80B96D0049E29A /* XYCoreDataManager.h */,
+				E27670C61A80B96D0049E29A /* XYCoreDataManager.m */,
+				E27670C71A80B96D0049E29A /* XYStorageManager.h */,
+				E27670C81A80B96D0049E29A /* XYStorageManager.m */,
+			);
+			name = Storage;
+			path = MarioLib/Storage;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27670C91A80B96D0049E29A /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				E27670CA1A80B96D0049E29A /* Cells */,
+				E27670DF1A80B96D0049E29A /* XYBaseUITableViewDelegate.h */,
+				E27670E01A80B96D0049E29A /* XYBaseUITableViewDelegate.m */,
+				E27670E11A80B96D0049E29A /* XYBaseUITableViewMethods.h */,
+				E27670E21A80B96D0049E29A /* XYLoadMore.h */,
+				E27670E31A80B96D0049E29A /* XYTableCellFactory.h */,
+				E27670E41A80B96D0049E29A /* XYTableCellFactory.m */,
+				E27670E51A80B96D0049E29A /* XYTableContainer.h */,
+				E27670E61A80B96D0049E29A /* XYTableContainer.m */,
+				E27670E71A80B96D0049E29A /* XYTableSection.h */,
+				E27670E81A80B96D0049E29A /* XYTableSection.m */,
+			);
+			name = Table;
+			path = MarioLib/Table;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27670CA1A80B96D0049E29A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E27670CB1A80B96D0049E29A /* XYBubbleTableCell.h */,
+				E27670CC1A80B96D0049E29A /* XYBubbleTableCell.m */,
+				E27670CD1A80B96D0049E29A /* XYButtonTableCell.h */,
+				E27670CE1A80B96D0049E29A /* XYButtonTableCell.m */,
+				E27670CF1A80B96D0049E29A /* XYDummyTableCell.h */,
+				E27670D01A80B96D0049E29A /* XYDummyTableCell.m */,
+				E27670D11A80B96D0049E29A /* XYDynamicTableCell.h */,
+				E27670D21A80B96D0049E29A /* XYDynamicTableCell.m */,
+				E27670D31A80B96D0049E29A /* XYExpandableTableCell.h */,
+				E27670D41A80B96D0049E29A /* XYExpandableTableCell.m */,
+				E27670D51A80B96D0049E29A /* XYRollableTableCell.h */,
+				E27670D61A80B96D0049E29A /* XYRollableTableCell.m */,
+				E27670D71A80B96D0049E29A /* XYSelectionItemTableCell.h */,
+				E27670D81A80B96D0049E29A /* XYSelectionItemTableCell.m */,
+				E27670D91A80B96D0049E29A /* XYSelectionTableCell.h */,
+				E27670DA1A80B96D0049E29A /* XYSelectionTableCell.m */,
+				E27670DB1A80B96D0049E29A /* XYTableCell.h */,
+				E27670DC1A80B96D0049E29A /* XYTableCell.m */,
+				E27670DD1A80B96D0049E29A /* XYValueHelpTableCell.h */,
+				E27670DE1A80B96D0049E29A /* XYValueHelpTableCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E27670E91A80B96D0049E29A /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				E27670EA1A80B96D0049E29A /* base64 */,
+				E27670EE1A80B96D0049E29A /* SBJson */,
+			);
+			name = ThirdParty;
+			path = MarioLib/ThirdParty;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27670EA1A80B96D0049E29A /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				E27670EB1A80B96D0049E29A /* GTMBase64.h */,
+				E27670EC1A80B96D0049E29A /* GTMBase64.m */,
+				E27670ED1A80B96D0049E29A /* GTMDefines.h */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
+		E27670EE1A80B96D0049E29A /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				E27670EF1A80B96D0049E29A /* NSObject+SBJson.h */,
+				E27670F01A80B96D0049E29A /* NSObject+SBJson.m */,
+				E27670F11A80B96D0049E29A /* SBJson.h */,
+				E27670F21A80B96D0049E29A /* SBJsonParser.h */,
+				E27670F31A80B96D0049E29A /* SBJsonParser.m */,
+				E27670F41A80B96D0049E29A /* SBJsonStreamParser.h */,
+				E27670F51A80B96D0049E29A /* SBJsonStreamParser.m */,
+				E27670F61A80B96D0049E29A /* SBJsonStreamParserAccumulator.h */,
+				E27670F71A80B96D0049E29A /* SBJsonStreamParserAccumulator.m */,
+				E27670F81A80B96D0049E29A /* SBJsonStreamParserAdapter.h */,
+				E27670F91A80B96D0049E29A /* SBJsonStreamParserAdapter.m */,
+				E27670FA1A80B96D0049E29A /* SBJsonStreamParserState.h */,
+				E27670FB1A80B96D0049E29A /* SBJsonStreamParserState.m */,
+				E27670FC1A80B96D0049E29A /* SBJsonStreamWriter.h */,
+				E27670FD1A80B96D0049E29A /* SBJsonStreamWriter.m */,
+				E27670FE1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.h */,
+				E27670FF1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.m */,
+				E27671001A80B96D0049E29A /* SBJsonStreamWriterState.h */,
+				E27671011A80B96D0049E29A /* SBJsonStreamWriterState.m */,
+				E27671021A80B96D0049E29A /* SBJsonTokeniser.h */,
+				E27671031A80B96D0049E29A /* SBJsonTokeniser.m */,
+				E27671041A80B96D0049E29A /* SBJsonUTF8Stream.h */,
+				E27671051A80B96D0049E29A /* SBJsonUTF8Stream.m */,
+				E27671061A80B96D0049E29A /* SBJsonWriter.h */,
+				E27671071A80B96D0049E29A /* SBJsonWriter.m */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+		E27671081A80B96D0049E29A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E27671091A80B96D0049E29A /* XYBaseAppDelegate.h */,
+				E276710A1A80B96D0049E29A /* XYBaseAppDelegate.m */,
+				E276710B1A80B96D0049E29A /* XYBaseErrorCenter.h */,
+				E276710C1A80B96D0049E29A /* XYBaseErrorCenter.m */,
+				E276710D1A80B96D0049E29A /* XYBusyProcessDelegate2.h */,
+				E276710E1A80B96D0049E29A /* XYBusyProcessorDelegate.h */,
+				E276710F1A80B96D0049E29A /* XYErrorInfo.h */,
+				E27671101A80B96D0049E29A /* XYErrorInfo.m */,
+				E27671111A80B96D0049E29A /* XYFieldSelectOption.h */,
+				E27671121A80B96D0049E29A /* XYFieldSelectOption.m */,
+				E27671131A80B96D0049E29A /* XYKeyboardListener.h */,
+				E27671141A80B96D0049E29A /* XYKeyboardListener.m */,
+				E27671151A80B96D0049E29A /* XYLabelValue.h */,
+				E27671161A80B96D0049E29A /* XYLabelValue.m */,
+				E27671171A80B96D0049E29A /* XYSelectOption.h */,
+				E27671181A80B96D0049E29A /* XYSelectOption.m */,
+				E27671191A80B96D0049E29A /* XYSelectorObject.h */,
+				E276711A1A80B96D0049E29A /* XYSelectorObject.m */,
+				E276711B1A80B96D0049E29A /* XYSkinManager.h */,
+				E276711C1A80B96D0049E29A /* XYSkinManager.m */,
+				E276711D1A80B96D0049E29A /* XYStatusUpdateDelegate.h */,
+				E276711E1A80B96D0049E29A /* XYUISelectionTextViewDelegate.h */,
+				E276711F1A80B96D0049E29A /* XYUISelectionTextViewDelegate.m */,
+				E27671201A80B96D0049E29A /* XYUIStatusUpdater.h */,
+				E27671211A80B96D0049E29A /* XYUIStatusUpdater.m */,
+				E27671221A80B96D0049E29A /* XYUITextFieldDelegate.h */,
+				E27671231A80B96D0049E29A /* XYUITextFieldDelegate.m */,
+				E27671241A80B96D0049E29A /* XYUITextViewDelegate.h */,
+				E27671251A80B96D0049E29A /* XYUITextViewDelegate.m */,
+				E27671261A80B96D0049E29A /* XYUtility.h */,
+				E27671271A80B96D0049E29A /* XYUtility.m */,
+			);
+			name = Utility;
+			path = MarioLib/Utility;
+			sourceTree = SOURCE_ROOT;
+		};
+		E27671281A80B96D0049E29A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E27671291A80B96D0049E29A /* XYBasePopOverViewController.h */,
+				E276712A1A80B96D0049E29A /* XYBasePopOverViewController.m */,
+				E276712B1A80B96D0049E29A /* XYBaseSplitViewController.h */,
+				E276712C1A80B96D0049E29A /* XYBaseSplitViewController.m */,
+				E276712D1A80B96D0049E29A /* XYBaseUITabBarController.h */,
+				E276712E1A80B96D0049E29A /* XYBaseUITabBarController.m */,
+				E276712F1A80B96D0049E29A /* XYBaseUITableViewController.h */,
+				E27671301A80B96D0049E29A /* XYBaseUITableViewController.m */,
+				E27671311A80B96D0049E29A /* XYBaseUIViewController.h */,
+				E27671321A80B96D0049E29A /* XYBaseUIViewController.m */,
+				E27671331A80B96D0049E29A /* XYErrorReportViewController.h */,
+				E27671341A80B96D0049E29A /* XYErrorReportViewController.m */,
+				E27671351A80B96D0049E29A /* XYProcessResult.h */,
+				E27671361A80B96D0049E29A /* XYProcessResult.m */,
+				E27671371A80B96D0049E29A /* XYSelectionListViewController.h */,
+				E27671381A80B96D0049E29A /* XYSelectionListViewController.m */,
+				E27671391A80B96D0049E29A /* XYSelectOptionViewController.h */,
+				E276713A1A80B96D0049E29A /* XYSelectOptionViewController.m */,
+				E276713B1A80B96D0049E29A /* XYVersionViewController.h */,
+				E276713C1A80B96D0049E29A /* XYVersionViewController.m */,
+				E276713D1A80B96D0049E29A /* XYWelcomeViewController.h */,
+				E276713E1A80B96D0049E29A /* XYWelcomeViewController.m */,
+			);
+			name = ViewControllers;
+			path = MarioLib/ViewControllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		E276713F1A80B96D0049E29A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E28AE7611B5E11600069EFC1 /* XYAnimation.h */,
+				E28AE7631B5E121A0069EFC1 /* XYActivityIndicatorBarView.h */,
+				E28AE7641B5E121A0069EFC1 /* XYActivityIndicatorBarView.m */,
+				E28AE7671B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.h */,
+				E28AE7681B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.m */,
+				E27590691A831A3B00E4C136 /* XYImageListView.h */,
+				E275906A1A831A3B00E4C136 /* XYImageListView.m */,
+				E27590651A83184200E4C136 /* XYPagedView.h */,
+				E27590661A83184200E4C136 /* XYPagedView.m */,
+				E27590611A83155600E4C136 /* XYUISegmentedControl.h */,
+				E27590621A83155600E4C136 /* XYUISegmentedControl.m */,
+				E27671401A80B96D0049E29A /* XYActivityIndicatorIconView.h */,
+				E27671411A80B96D0049E29A /* XYActivityIndicatorIconView.m */,
+				E27671421A80B96D0049E29A /* XYActivityIndicatorView.h */,
+				E27671431A80B96D0049E29A /* XYActivityIndicatorView.m */,
+				E27671441A80B96D0049E29A /* XYAnimationView.h */,
+				E27671451A80B96D0049E29A /* XYAnimationView.m */,
+				E27671461A80B96D0049E29A /* XYAnimationViewDelegate.h */,
+				E27671471A80B96D0049E29A /* XYBaseView.h */,
+				E27671481A80B96D0049E29A /* XYBaseView.m */,
+				E27671491A80B96D0049E29A /* XYBubbleView.h */,
+				E276714A1A80B96D0049E29A /* XYBubbleView.m */,
+				E276714B1A80B96D0049E29A /* XYFieldView.h */,
+				E276714C1A80B96D0049E29A /* XYFieldView.m */,
+				E276714D1A80B96D0049E29A /* XYInputTextFieldView.h */,
+				E276714E1A80B96D0049E29A /* XYInputTextFieldView.m */,
+				E276714F1A80B96D0049E29A /* XYInputTextViewView.h */,
+				E27671501A80B96D0049E29A /* XYInputTextViewView.m */,
+				E27671511A80B96D0049E29A /* XYNotificationView.h */,
+				E27671521A80B96D0049E29A /* XYNotificationView.m */,
+				E27671531A80B96D0049E29A /* XYProcessbarView.h */,
+				E27671541A80B96D0049E29A /* XYProcessbarView.m */,
+				E27671551A80B96D0049E29A /* XYProgressIndicatorView.h */,
+				E27671561A80B96D0049E29A /* XYProgressIndicatorView.m */,
+				E27671571A80B96D0049E29A /* XYSideView.h */,
+				E27671581A80B96D0049E29A /* XYSideView.m */,
+				E27671591A80B96D0049E29A /* XYUIAlertView.h */,
+				E276715A1A80B96D0049E29A /* XYUIAlertView.m */,
+				E276715B1A80B96D0049E29A /* XYUIAlertView2.h */,
+				E276715C1A80B96D0049E29A /* XYUIAlertView2.m */,
+				E276715D1A80B96D0049E29A /* XYViewDelegate.h */,
+				E2B101681B69F886007A1127 /* XYUIDragView.h */,
+				E2B101691B69F886007A1127 /* XYUIDragView.m */,
+			);
+			name = Views;
+			path = MarioLib/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		E2D9B95F1A5E722E00FBBEFC = {
+			isa = PBXGroup;
+			children = (
+				E2D9B96A1A5E722E00FBBEFC /* MarioLib */,
+				E2D9B9841A5E722E00FBBEFC /* MarioLibTests */,
+				E276707B1A80B8C60049E29A /* XYUIDesign */,
+				E27670881A80B8C70049E29A /* XYUIDesignTests */,
+				E2D9B9691A5E722E00FBBEFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2D9B9691A5E722E00FBBEFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9B9681A5E722E00FBBEFC /* MarioLib.app */,
+				E2D9B9811A5E722E00FBBEFC /* MarioLibTests.xctest */,
+				E276707A1A80B8C60049E29A /* libXYUIDesign.a */,
+				E27670841A80B8C60049E29A /* XYUIDesignTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2D9B96A1A5E722E00FBBEFC /* MarioLib */ = {
+			isa = PBXGroup;
+			children = (
+				E275904C1A81FE4600E4C136 /* TestMessage */,
+				E2766E361A761CA50049E29A /* UMessage_Sdk_1.1.0 */,
+				E2D9B96F1A5E722E00FBBEFC /* AppDelegate.h */,
+				E2D9B9701A5E722E00FBBEFC /* AppDelegate.m */,
+				E2D9B9721A5E722E00FBBEFC /* ViewController.h */,
+				E2D9B9731A5E722E00FBBEFC /* ViewController.m */,
+				E2766E301A7239710049E29A /* AllSampleViewController.h */,
+				E2766E311A7239710049E29A /* AllSampleViewController.m */,
+				E2766E331A723CF50049E29A /* StandardTableViewController.h */,
+				E2766E341A723CF50049E29A /* StandardTableViewController.m */,
+				E275906E1A8355DA00E4C136 /* AppBaseUITableViewController.h */,
+				E275906F1A8355DA00E4C136 /* AppBaseUITableViewController.m */,
+				E28AE75B1B5DED230069EFC1 /* TestXYBaseUIViewController.h */,
+				E28AE75C1B5DED230069EFC1 /* TestXYBaseUIViewController.m */,
+				E28AE75E1B5DED3D0069EFC1 /* TestXYBaseUITableViewController.h */,
+				E28AE75F1B5DED3D0069EFC1 /* TestXYBaseUITableViewController.m */,
+				E2B101651B68595C007A1127 /* TestDragControlVc.h */,
+				E2B101661B68595C007A1127 /* TestDragControlVc.m */,
+				E2D9B9751A5E722E00FBBEFC /* Main.storyboard */,
+				E2D9B9781A5E722E00FBBEFC /* Images.xcassets */,
+				E2D9B97A1A5E722E00FBBEFC /* LaunchScreen.xib */,
+				E2D9B96B1A5E722E00FBBEFC /* Supporting Files */,
+			);
+			path = MarioLib;
+			sourceTree = "<group>";
+		};
+		E2D9B96B1A5E722E00FBBEFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9B96C1A5E722E00FBBEFC /* Info.plist */,
+				E2D9B96D1A5E722E00FBBEFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2D9B9841A5E722E00FBBEFC /* MarioLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9B9871A5E722E00FBBEFC /* MarioLibTests.m */,
+				E2D9B9851A5E722E00FBBEFC /* Supporting Files */,
+			);
+			path = MarioLibTests;
+			sourceTree = "<group>";
+		};
+		E2D9B9851A5E722E00FBBEFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2D9B9861A5E722E00FBBEFC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E27671C21A80C1DD0049E29A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27671C41A80C2470049E29A /* XYUIDesign.h in Headers */,
+				E27671C31A80C2470049E29A /* UIDesighHeader.h in Headers */,
+				E27671C51A80C2470049E29A /* XYAdvField.h in Headers */,
+				E27671C61A80C2470049E29A /* XYAdvFieldDelegate.h in Headers */,
+				E27671C71A80C2470049E29A /* XYAdvFieldViewControllerDelegate.h in Headers */,
+				E27671C81A80C2470049E29A /* XYAdvSearchField.h in Headers */,
+				E27671C91A80C2470049E29A /* XYAdvSearchFieldDelegate.h in Headers */,
+				E27671CA1A80C2470049E29A /* XYAdvSearchFieldViewController.h in Headers */,
+				E27671CB1A80C2470049E29A /* XYDatePickerField.h in Headers */,
+				E27671CC1A80C2470049E29A /* XYDynaSearchField.h in Headers */,
+				E27671CD1A80C2470049E29A /* XYDynaSearchFieldDelegate.h in Headers */,
+				E27671CE1A80C2470049E29A /* XYDynaSearchFieldViewController.h in Headers */,
+				E27671CF1A80C2470049E29A /* XYDynaSearchSelectionField.h in Headers */,
+				E27671D01A80C2470049E29A /* XYDynaSearchSelectionFieldViewController.h in Headers */,
+				E27671D11A80C2470049E29A /* XYField.h in Headers */,
+				E27671D21A80C2470049E29A /* XYInputTextField.h in Headers */,
+				E27671D31A80C2470049E29A /* XYInputTextViewField.h in Headers */,
+				E27671D41A80C2470049E29A /* XYPickerField.h in Headers */,
+				E27671D51A80C2470049E29A /* XYSelectionField.h in Headers */,
+				E27671D61A80C2470049E29A /* XYSelectionFieldDataSource.h in Headers */,
+				E27671D71A80C2470049E29A /* XYSelectionItemField.h in Headers */,
+				E27671D81A80C2470049E29A /* XYSelectOptionField.h in Headers */,
+				E27671D91A80C2470049E29A /* XYUIDatePickerTextFieldDelegate.h in Headers */,
+				E27671DA1A80C2470049E29A /* XYConnection.h in Headers */,
+				E27671DB1A80C2470049E29A /* XYConnector.h in Headers */,
+				E27671DC1A80C2470049E29A /* XYConnectorManager.h in Headers */,
+				E27671DD1A80C2470049E29A /* XYRequest.h in Headers */,
+				E27671DE1A80C2470049E29A /* XYResponse.h in Headers */,
+				E27671DF1A80C2470049E29A /* XYCoreDataConnector.h in Headers */,
+				E27671E01A80C2470049E29A /* XYCoreDataManager.h in Headers */,
+				E27671E11A80C2470049E29A /* XYStorageManager.h in Headers */,
+				E27671E21A80C2470049E29A /* XYBubbleTableCell.h in Headers */,
+				E27671E31A80C2480049E29A /* XYButtonTableCell.h in Headers */,
+				E27671E41A80C2480049E29A /* XYDummyTableCell.h in Headers */,
+				E27671E51A80C2480049E29A /* XYDynamicTableCell.h in Headers */,
+				E27671E61A80C2480049E29A /* XYExpandableTableCell.h in Headers */,
+				E27671E71A80C2480049E29A /* XYRollableTableCell.h in Headers */,
+				E27671E81A80C2480049E29A /* XYSelectionItemTableCell.h in Headers */,
+				E27671E91A80C2480049E29A /* XYSelectionTableCell.h in Headers */,
+				E27671EA1A80C2480049E29A /* XYTableCell.h in Headers */,
+				E27671EB1A80C2480049E29A /* XYValueHelpTableCell.h in Headers */,
+				E27671EC1A80C2480049E29A /* XYBaseUITableViewDelegate.h in Headers */,
+				E27671ED1A80C2480049E29A /* XYBaseUITableViewMethods.h in Headers */,
+				E27671EE1A80C2480049E29A /* XYLoadMore.h in Headers */,
+				E27671EF1A80C2480049E29A /* XYTableCellFactory.h in Headers */,
+				E27671F01A80C2480049E29A /* XYTableContainer.h in Headers */,
+				E27671F11A80C2480049E29A /* XYTableSection.h in Headers */,
+				E27671F21A80C2480049E29A /* GTMBase64.h in Headers */,
+				E27671F31A80C2480049E29A /* GTMDefines.h in Headers */,
+				E27671F41A80C2490049E29A /* NSObject+SBJson.h in Headers */,
+				E27671F51A80C2490049E29A /* SBJson.h in Headers */,
+				E27671F61A80C2490049E29A /* SBJsonParser.h in Headers */,
+				E27671F71A80C2490049E29A /* SBJsonStreamParser.h in Headers */,
+				E27671F81A80C2490049E29A /* SBJsonStreamParserAccumulator.h in Headers */,
+				E27671F91A80C2490049E29A /* SBJsonStreamParserAdapter.h in Headers */,
+				E27671FA1A80C2490049E29A /* SBJsonStreamParserState.h in Headers */,
+				E27671FB1A80C2490049E29A /* SBJsonStreamWriter.h in Headers */,
+				E27671FC1A80C2490049E29A /* SBJsonStreamWriterAccumulator.h in Headers */,
+				E27671FD1A80C2490049E29A /* SBJsonStreamWriterState.h in Headers */,
+				E27671FE1A80C2490049E29A /* SBJsonTokeniser.h in Headers */,
+				E27671FF1A80C2490049E29A /* SBJsonUTF8Stream.h in Headers */,
+				E27672001A80C2490049E29A /* SBJsonWriter.h in Headers */,
+				E27672011A80C24A0049E29A /* XYBaseAppDelegate.h in Headers */,
+				E27672021A80C24A0049E29A /* XYBaseErrorCenter.h in Headers */,
+				E27672031A80C24A0049E29A /* XYBusyProcessDelegate2.h in Headers */,
+				E28AE7691B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.h in Headers */,
+				E27672041A80C24A0049E29A /* XYBusyProcessorDelegate.h in Headers */,
+				E27672051A80C24A0049E29A /* XYErrorInfo.h in Headers */,
+				E27672061A80C24A0049E29A /* XYFieldSelectOption.h in Headers */,
+				E27672071A80C24A0049E29A /* XYKeyboardListener.h in Headers */,
+				E27672081A80C6D70049E29A /* XYLabelValue.h in Headers */,
+				E27672091A80C6D70049E29A /* XYSelectOption.h in Headers */,
+				E276720A1A80C6D70049E29A /* XYSelectorObject.h in Headers */,
+				E276720B1A80C6D70049E29A /* XYSkinManager.h in Headers */,
+				E276720C1A80C6D70049E29A /* XYStatusUpdateDelegate.h in Headers */,
+				E276720D1A80C6D70049E29A /* XYUISelectionTextViewDelegate.h in Headers */,
+				E276720E1A80C6D70049E29A /* XYUIStatusUpdater.h in Headers */,
+				E276720F1A80C6D70049E29A /* XYUITextFieldDelegate.h in Headers */,
+				E27672101A80C6D70049E29A /* XYUITextViewDelegate.h in Headers */,
+				E27672111A80C6D70049E29A /* XYUtility.h in Headers */,
+				E27672121A80C6D70049E29A /* XYBasePopOverViewController.h in Headers */,
+				E27672131A80C6D70049E29A /* XYBaseSplitViewController.h in Headers */,
+				E27672141A80C6D70049E29A /* XYBaseUITabBarController.h in Headers */,
+				E27672151A80C6D70049E29A /* XYBaseUITableViewController.h in Headers */,
+				E27672161A80C6D70049E29A /* XYBaseUIViewController.h in Headers */,
+				E27672171A80C6D70049E29A /* XYErrorReportViewController.h in Headers */,
+				E27672181A80C6D70049E29A /* XYProcessResult.h in Headers */,
+				E27672191A80C6D70049E29A /* XYSelectionListViewController.h in Headers */,
+				E276721A1A80C6D70049E29A /* XYSelectOptionViewController.h in Headers */,
+				E276721B1A80C6D70049E29A /* XYVersionViewController.h in Headers */,
+				E276721C1A80C6D70049E29A /* XYWelcomeViewController.h in Headers */,
+				E276721D1A80C6D70049E29A /* XYActivityIndicatorIconView.h in Headers */,
+				E276721E1A80C6D70049E29A /* XYActivityIndicatorView.h in Headers */,
+				E276721F1A80C6D70049E29A /* XYAnimationView.h in Headers */,
+				E27672201A80C6D70049E29A /* XYAnimationViewDelegate.h in Headers */,
+				E27672211A80C6D70049E29A /* XYBaseView.h in Headers */,
+				E27672221A80C6D70049E29A /* XYBubbleView.h in Headers */,
+				E27672231A80C6D70049E29A /* XYFieldView.h in Headers */,
+				E27672241A80C6D70049E29A /* XYInputTextFieldView.h in Headers */,
+				E27672251A80C6D70049E29A /* XYInputTextViewView.h in Headers */,
+				E27672261A80C6D70049E29A /* XYNotificationView.h in Headers */,
+				E27672271A80C6D70049E29A /* XYProcessbarView.h in Headers */,
+				E2B1016A1B69F886007A1127 /* XYUIDragView.h in Headers */,
+				E27672281A80C6D70049E29A /* XYProgressIndicatorView.h in Headers */,
+				E27672291A80C6D70049E29A /* XYSideView.h in Headers */,
+				E276722A1A80C6D70049E29A /* XYUIAlertView.h in Headers */,
+				E27590581A8304D300E4C136 /* XYMessageAgent.h in Headers */,
+				E275905C1A83057200E4C136 /* XYMessageEngine.h in Headers */,
+				E276722B1A80C6D80049E29A /* XYUIAlertView2.h in Headers */,
+				E27590671A83184200E4C136 /* XYPagedView.h in Headers */,
+				E275906B1A831A3B00E4C136 /* XYImageListView.h in Headers */,
+				E28AE7651B5E121A0069EFC1 /* XYActivityIndicatorBarView.h in Headers */,
+				E28AE7621B5E11600069EFC1 /* XYAnimation.h in Headers */,
+				E27590631A83155600E4C136 /* XYUISegmentedControl.h in Headers */,
+				E276722C1A80C6D80049E29A /* XYViewDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E27670791A80B8C60049E29A /* XYUIDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E276708B1A80B8C70049E29A /* Build configuration list for PBXNativeTarget "XYUIDesign" */;
+			buildPhases = (
+				E27670761A80B8C60049E29A /* Sources */,
+				E27670771A80B8C60049E29A /* Frameworks */,
+				E27670781A80B8C60049E29A /* CopyFiles */,
+				E27671C21A80C1DD0049E29A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYUIDesign;
+			productName = XYUIDesign;
+			productReference = E276707A1A80B8C60049E29A /* libXYUIDesign.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E27670831A80B8C60049E29A /* XYUIDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E276708E1A80B8C70049E29A /* Build configuration list for PBXNativeTarget "XYUIDesignTests" */;
+			buildPhases = (
+				E27670801A80B8C60049E29A /* Sources */,
+				E27670811A80B8C60049E29A /* Frameworks */,
+				E27670821A80B8C60049E29A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E27670871A80B8C70049E29A /* PBXTargetDependency */,
+			);
+			name = XYUIDesignTests;
+			productName = XYUIDesignTests;
+			productReference = E27670841A80B8C60049E29A /* XYUIDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2D9B9671A5E722E00FBBEFC /* MarioLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D9B98B1A5E722E00FBBEFC /* Build configuration list for PBXNativeTarget "MarioLib" */;
+			buildPhases = (
+				E2D9B9641A5E722E00FBBEFC /* Sources */,
+				E2D9B9651A5E722E00FBBEFC /* Frameworks */,
+				E2D9B9661A5E722E00FBBEFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarioLib;
+			productName = MarioLib;
+			productReference = E2D9B9681A5E722E00FBBEFC /* MarioLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2D9B9801A5E722E00FBBEFC /* MarioLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D9B98E1A5E722E00FBBEFC /* Build configuration list for PBXNativeTarget "MarioLibTests" */;
+			buildPhases = (
+				E2D9B97D1A5E722E00FBBEFC /* Sources */,
+				E2D9B97E1A5E722E00FBBEFC /* Frameworks */,
+				E2D9B97F1A5E722E00FBBEFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D9B9831A5E722E00FBBEFC /* PBXTargetDependency */,
+			);
+			name = MarioLibTests;
+			productName = MarioLibTests;
+			productReference = E2D9B9811A5E722E00FBBEFC /* MarioLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2D9B9601A5E722E00FBBEFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Xu, Xiaoye";
+				TargetAttributes = {
+					E27670791A80B8C60049E29A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E27670831A80B8C60049E29A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E2D9B9671A5E722E00FBBEFC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E2D9B9801A5E722E00FBBEFC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E2D9B9671A5E722E00FBBEFC;
+					};
+				};
+			};
+			buildConfigurationList = E2D9B9631A5E722E00FBBEFC /* Build configuration list for PBXProject "MarioLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2D9B95F1A5E722E00FBBEFC;
+			productRefGroup = E2D9B9691A5E722E00FBBEFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2D9B9671A5E722E00FBBEFC /* MarioLib */,
+				E2D9B9801A5E722E00FBBEFC /* MarioLibTests */,
+				E27670791A80B8C60049E29A /* XYUIDesign */,
+				E27670831A80B8C60049E29A /* XYUIDesignTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E27670821A80B8C60049E29A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B9661A5E722E00FBBEFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D9B9771A5E722E00FBBEFC /* Main.storyboard in Resources */,
+				E2D9B97C1A5E722E00FBBEFC /* LaunchScreen.xib in Resources */,
+				E2D9B9791A5E722E00FBBEFC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B97F1A5E722E00FBBEFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E27670761A80B8C60049E29A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E276722D1A80C7190049E29A /* XYUIDesign.m in Sources */,
+				E27671601A80B96D0049E29A /* XYAdvSearchFieldViewController.m in Sources */,
+				E276716E1A80B96D0049E29A /* XYConnection.m in Sources */,
+				E27671911A80B96D0049E29A /* XYBaseAppDelegate.m in Sources */,
+				E27671B31A80B96D0049E29A /* XYProcessbarView.m in Sources */,
+				E276716D1A80B96D0049E29A /* XYUIDatePickerTextFieldDelegate.m in Sources */,
+				E2B1016B1B69F886007A1127 /* XYUIDragView.m in Sources */,
+				E27671A61A80B96D0049E29A /* XYSelectionListViewController.m in Sources */,
+				E27671651A80B96D0049E29A /* XYDynaSearchSelectionFieldViewController.m in Sources */,
+				E27671721A80B96D0049E29A /* XYResponse.m in Sources */,
+				E27671771A80B96D0049E29A /* XYButtonTableCell.m in Sources */,
+				E27671B71A80B96D0049E29A /* XYUIAlertView2.m in Sources */,
+				E27671951A80B96D0049E29A /* XYKeyboardListener.m in Sources */,
+				E27671641A80B96D0049E29A /* XYDynaSearchSelectionField.m in Sources */,
+				E27671AB1A80B96D0049E29A /* XYActivityIndicatorView.m in Sources */,
+				E27671AA1A80B96D0049E29A /* XYActivityIndicatorIconView.m in Sources */,
+				E27671A21A80B96D0049E29A /* XYBaseUITableViewController.m in Sources */,
+				E27671A81A80B96D0049E29A /* XYVersionViewController.m in Sources */,
+				E27671741A80B96D0049E29A /* XYCoreDataManager.m in Sources */,
+				E27671B21A80B96D0049E29A /* XYNotificationView.m in Sources */,
+				E27671A51A80B96D0049E29A /* XYProcessResult.m in Sources */,
+				E275905D1A83057200E4C136 /* XYMessageEngine.m in Sources */,
+				E27671B11A80B96D0049E29A /* XYInputTextViewView.m in Sources */,
+				E27671981A80B96D0049E29A /* XYSelectorObject.m in Sources */,
+				E27671621A80B96D0049E29A /* XYDynaSearchField.m in Sources */,
+				E276717A1A80B96D0049E29A /* XYExpandableTableCell.m in Sources */,
+				E27671841A80B96D0049E29A /* GTMBase64.m in Sources */,
+				E276715E1A80B96D0049E29A /* XYAdvField.m in Sources */,
+				E276716C1A80B96D0049E29A /* XYSelectOptionField.m in Sources */,
+				E27671811A80B96D0049E29A /* XYTableCellFactory.m in Sources */,
+				E276719C1A80B96D0049E29A /* XYUITextFieldDelegate.m in Sources */,
+				E28AE76A1B5F7CD00069EFC1 /* XYActivityIndicatorCircleView.m in Sources */,
+				E276716F1A80B96D0049E29A /* XYConnector.m in Sources */,
+				E27590591A8304D300E4C136 /* XYMessageAgent.m in Sources */,
+				E27671971A80B96D0049E29A /* XYSelectOption.m in Sources */,
+				E27671671A80B96D0049E29A /* XYInputTextField.m in Sources */,
+				E27671AD1A80B96D0049E29A /* XYBaseView.m in Sources */,
+				E27671791A80B96D0049E29A /* XYDynamicTableCell.m in Sources */,
+				E276715F1A80B96D0049E29A /* XYAdvSearchField.m in Sources */,
+				E27671A31A80B96D0049E29A /* XYBaseUIViewController.m in Sources */,
+				E27671B41A80B96D0049E29A /* XYProgressIndicatorView.m in Sources */,
+				E27671AC1A80B96D0049E29A /* XYAnimationView.m in Sources */,
+				E27671B51A80B96D0049E29A /* XYSideView.m in Sources */,
+				E27671A91A80B96D0049E29A /* XYWelcomeViewController.m in Sources */,
+				E276719D1A80B96D0049E29A /* XYUITextViewDelegate.m in Sources */,
+				E276719F1A80B96D0049E29A /* XYBasePopOverViewController.m in Sources */,
+				E276717D1A80B96D0049E29A /* XYSelectionTableCell.m in Sources */,
+				E27671961A80B96D0049E29A /* XYLabelValue.m in Sources */,
+				E27590641A83155600E4C136 /* XYUISegmentedControl.m in Sources */,
+				E27671941A80B96D0049E29A /* XYFieldSelectOption.m in Sources */,
+				E27671701A80B96D0049E29A /* XYConnectorManager.m in Sources */,
+				E27671751A80B96D0049E29A /* XYStorageManager.m in Sources */,
+				E27671A01A80B96D0049E29A /* XYBaseSplitViewController.m in Sources */,
+				E27671781A80B96D0049E29A /* XYDummyTableCell.m in Sources */,
+				E27671AE1A80B96D0049E29A /* XYBubbleView.m in Sources */,
+				E276719A1A80B96D0049E29A /* XYUISelectionTextViewDelegate.m in Sources */,
+				E27671831A80B96D0049E29A /* XYTableSection.m in Sources */,
+				E276719B1A80B96D0049E29A /* XYUIStatusUpdater.m in Sources */,
+				E27671AF1A80B96D0049E29A /* XYFieldView.m in Sources */,
+				E27671711A80B96D0049E29A /* XYRequest.m in Sources */,
+				E27671681A80B96D0049E29A /* XYInputTextViewField.m in Sources */,
+				E27671921A80B96D0049E29A /* XYBaseErrorCenter.m in Sources */,
+				E27671731A80B96D0049E29A /* XYCoreDataConnector.m in Sources */,
+				E276717C1A80B96D0049E29A /* XYSelectionItemTableCell.m in Sources */,
+				E276717B1A80B96D0049E29A /* XYRollableTableCell.m in Sources */,
+				E27671631A80B96D0049E29A /* XYDynaSearchFieldViewController.m in Sources */,
+				E27671691A80B96D0049E29A /* XYPickerField.m in Sources */,
+				E27671931A80B96D0049E29A /* XYErrorInfo.m in Sources */,
+				E27671821A80B96D0049E29A /* XYTableContainer.m in Sources */,
+				E27671661A80B96D0049E29A /* XYField.m in Sources */,
+				E27671B61A80B96D0049E29A /* XYUIAlertView.m in Sources */,
+				E276716B1A80B96D0049E29A /* XYSelectionItemField.m in Sources */,
+				E27671A11A80B96D0049E29A /* XYBaseUITabBarController.m in Sources */,
+				E27671761A80B96D0049E29A /* XYBubbleTableCell.m in Sources */,
+				E276717E1A80B96D0049E29A /* XYTableCell.m in Sources */,
+				E27671A41A80B96D0049E29A /* XYErrorReportViewController.m in Sources */,
+				E276719E1A80B96D0049E29A /* XYUtility.m in Sources */,
+				E27671611A80B96D0049E29A /* XYDatePickerField.m in Sources */,
+				E276717F1A80B96D0049E29A /* XYValueHelpTableCell.m in Sources */,
+				E276716A1A80B96D0049E29A /* XYSelectionField.m in Sources */,
+				E275906C1A831A3B00E4C136 /* XYImageListView.m in Sources */,
+				E27671991A80B96D0049E29A /* XYSkinManager.m in Sources */,
+				E27590681A83184200E4C136 /* XYPagedView.m in Sources */,
+				E27671A71A80B96D0049E29A /* XYSelectOptionViewController.m in Sources */,
+				E27671801A80B96D0049E29A /* XYBaseUITableViewDelegate.m in Sources */,
+				E28AE7661B5E121A0069EFC1 /* XYActivityIndicatorBarView.m in Sources */,
+				E27671B01A80B96D0049E29A /* XYInputTextFieldView.m in Sources */,
+				E27671851A80B96D0049E29A /* NSObject+SBJson.m in Sources */,
+				E27671861A80B96D0049E29A /* SBJsonParser.m in Sources */,
+				E276718C1A80B96D0049E29A /* SBJsonStreamWriterAccumulator.m in Sources */,
+				E27671901A80B96D0049E29A /* SBJsonWriter.m in Sources */,
+				E276718E1A80B96D0049E29A /* SBJsonTokeniser.m in Sources */,
+				E276718B1A80B96D0049E29A /* SBJsonStreamWriter.m in Sources */,
+				E27671891A80B96D0049E29A /* SBJsonStreamParserAdapter.m in Sources */,
+				E276718F1A80B96D0049E29A /* SBJsonUTF8Stream.m in Sources */,
+				E276718A1A80B96D0049E29A /* SBJsonStreamParserState.m in Sources */,
+				E27671871A80B96D0049E29A /* SBJsonStreamParser.m in Sources */,
+				E276718D1A80B96D0049E29A /* SBJsonStreamWriterState.m in Sources */,
+				E27671881A80B96D0049E29A /* SBJsonStreamParserAccumulator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27670801A80B8C60049E29A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B9641A5E722E00FBBEFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D9B9741A5E722E00FBBEFC /* ViewController.m in Sources */,
+				E275907A1A8499E100E4C136 /* MessageDict.m in Sources */,
+				E2766E351A723CF50049E29A /* StandardTableViewController.m in Sources */,
+				E2B101671B68595C007A1127 /* TestDragControlVc.m in Sources */,
+				E27590601A83101500E4C136 /* MessageItem.m in Sources */,
+				E28AE75D1B5DED230069EFC1 /* TestXYBaseUIViewController.m in Sources */,
+				E2766E321A7239710049E29A /* AllSampleViewController.m in Sources */,
+				E27590701A8355DA00E4C136 /* AppBaseUITableViewController.m in Sources */,
+				E2D9B9711A5E722E00FBBEFC /* AppDelegate.m in Sources */,
+				E2D9B96E1A5E722E00FBBEFC /* main.m in Sources */,
+				E28AE7601B5DED3D0069EFC1 /* TestXYBaseUITableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9B97D1A5E722E00FBBEFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D9B9881A5E722E00FBBEFC /* MarioLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E27670871A80B8C70049E29A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E27670791A80B8C60049E29A /* XYUIDesign */;
+			targetProxy = E27670861A80B8C70049E29A /* PBXContainerItemProxy */;
+		};
+		E2D9B9831A5E722E00FBBEFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D9B9671A5E722E00FBBEFC /* MarioLib */;
+			targetProxy = E2D9B9821A5E722E00FBBEFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2D9B9751A5E722E00FBBEFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2D9B9761A5E722E00FBBEFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2D9B97A1A5E722E00FBBEFC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2D9B97B1A5E722E00FBBEFC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E276708C1A80B8C70049E29A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7s,
+					armv7,
+					i386,
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_MODULE_NAME = XYUIDesign;
+				PRODUCT_NAME = XYUIDesign;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		E276708D1A80B8C70049E29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7s,
+					armv7,
+					i386,
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_MODULE_NAME = XYUIDesign;
+				PRODUCT_NAME = XYUIDesign;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		E276708F1A80B8C70049E29A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XYUIDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E27670901A80B8C70049E29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XYUIDesignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2D9B9891A5E722E00FBBEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2D9B98A1A5E722E00FBBEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2D9B98C1A5E722E00FBBEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MarioLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarioLib/UMessage_Sdk_1.1.0",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariolib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E2D9B98D1A5E722E00FBBEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MarioLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarioLib/UMessage_Sdk_1.1.0",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariolib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		E2D9B98F1A5E722E00FBBEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MarioLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarioLib.app/MarioLib";
+			};
+			name = Debug;
+		};
+		E2D9B9901A5E722E00FBBEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MarioLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarioLib.app/MarioLib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E276708B1A80B8C70049E29A /* Build configuration list for PBXNativeTarget "XYUIDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E276708C1A80B8C70049E29A /* Debug */,
+				E276708D1A80B8C70049E29A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E276708E1A80B8C70049E29A /* Build configuration list for PBXNativeTarget "XYUIDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E276708F1A80B8C70049E29A /* Debug */,
+				E27670901A80B8C70049E29A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D9B9631A5E722E00FBBEFC /* Build configuration list for PBXProject "MarioLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D9B9891A5E722E00FBBEFC /* Debug */,
+				E2D9B98A1A5E722E00FBBEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D9B98B1A5E722E00FBBEFC /* Build configuration list for PBXNativeTarget "MarioLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D9B98C1A5E722E00FBBEFC /* Debug */,
+				E2D9B98D1A5E722E00FBBEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D9B98E1A5E722E00FBBEFC /* Build configuration list for PBXNativeTarget "MarioLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D9B98F1A5E722E00FBBEFC /* Debug */,
+				E2D9B9901A5E722E00FBBEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2D9B9601A5E722E00FBBEFC /* Project object */;
+}
